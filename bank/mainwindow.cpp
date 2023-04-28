@@ -72,4 +72,341 @@ void MainWindow::on_activity_button_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
 }
+// Pagination for Activity page
+
+
+void MainWindow::on_dashboard_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_fund_tranfer_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_cards_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_bill_pay_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_beneficiary_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_services_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_profile_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+
+void MainWindow::on_activity_button_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+//Pagination for Services Page
+void MainWindow::on_dashboard_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_fund_tranfer_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_cards_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_bill_pay_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_beneficiary_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_services_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_profile_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+
+void MainWindow::on_activity_button_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+//Pagination for Beneficiary page
+void MainWindow::on_dashboard_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_fund_tranfer_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_cards_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_bill_pay_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_beneficiary_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_services_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_profile_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+
+void MainWindow::on_activity_button_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+//Pagination for bill pay page
+void MainWindow::on_dashboard_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_fund_tranfer_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_cards_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_bill_pay_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_beneficiary_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_services_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_profile_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+
+void MainWindow::on_activity_button_7_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+// Pagination for Cards page
+
+void MainWindow::on_dashboard_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_fund_tranfer_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_cards_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_bill_pay_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_beneficiary_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_services_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_profile_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+
+void MainWindow::on_activity_button_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+// Pagination for fund transfer page
+void MainWindow::on_dashboard_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_fund_tranfer_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_cards_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_bill_pay_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_beneficiary_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_services_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_profile_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+
+void MainWindow::on_activity_button_9_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+// Pagination for Profile page
+void MainWindow::on_dashboard_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_fund_tranfer_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void MainWindow::on_cards_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
+
+void MainWindow::on_bill_pay_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);
+}
+
+
+void MainWindow::on_beneficiary_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_services_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_profile_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+
+void MainWindow::on_activity_button_10_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
 

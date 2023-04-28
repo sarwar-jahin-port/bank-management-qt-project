@@ -126,6 +126,17 @@ public:
     QLabel *label_30;
     QSpacerItem *horizontalSpacer_10;
     QSpacerItem *horizontalSpacer_11;
+    QWidget *layoutWidget_2;
+    QHBoxLayout *horizontalLayout_3;
+    QPushButton *dashboard_button_2;
+    QPushButton *fund_tranfer_button_2;
+    QPushButton *cards_button_2;
+    QPushButton *bill_pay_button_2;
+    QPushButton *beneficiary_button_2;
+    QPushButton *services_button_2;
+    QPushButton *home_schedular_button_2;
+    QPushButton *profile_button_2;
+    QPushButton *activity_button_2;
     QWidget *Services_page;
     QGroupBox *groupBox_7;
     QWidget *layoutWidget3;
@@ -148,16 +159,16 @@ public:
     QSpacerItem *horizontalSpacer_8;
     QSpacerItem *horizontalSpacer_9;
     QWidget *layoutWidget_3;
-    QHBoxLayout *horizontalLayout_3;
-    QPushButton *dashboard_button_2;
-    QPushButton *fund_tranfer_button_2;
-    QPushButton *cards_button_2;
-    QPushButton *bill_pay_button_2;
-    QPushButton *beneficiary_button_2;
-    QPushButton *services_button_2;
-    QPushButton *home_schedular_button_2;
-    QPushButton *profile_button_2;
-    QPushButton *activity_button_2;
+    QHBoxLayout *horizontalLayout_28;
+    QPushButton *dashboard_button_4;
+    QPushButton *fund_tranfer_button_4;
+    QPushButton *cards_button_4;
+    QPushButton *bill_pay_button_4;
+    QPushButton *beneficiary_button_4;
+    QPushButton *services_button_4;
+    QPushButton *home_schedular_button_4;
+    QPushButton *profile_button_4;
+    QPushButton *activity_button_4;
     QWidget *beneficiary_page;
     QGroupBox *groupBox_6;
     QWidget *layoutWidget4;
@@ -183,6 +194,17 @@ public:
     QLabel *label_31;
     QSpacerItem *horizontalSpacer_12;
     QSpacerItem *horizontalSpacer_13;
+    QWidget *layoutWidget_18;
+    QHBoxLayout *horizontalLayout_29;
+    QPushButton *dashboard_button_5;
+    QPushButton *fund_tranfer_button_5;
+    QPushButton *cards_button_5;
+    QPushButton *bill_pay_button_5;
+    QPushButton *beneficiary_button_5;
+    QPushButton *services_button_5;
+    QPushButton *home_schedular_button_5;
+    QPushButton *profile_button_5;
+    QPushButton *activity_button_5;
     QWidget *bill_pay_page;
     QGroupBox *groupBox_2;
     QGroupBox *groupBox_3;
@@ -223,6 +245,17 @@ public:
     QLabel *label_32;
     QSpacerItem *horizontalSpacer_14;
     QSpacerItem *horizontalSpacer_15;
+    QWidget *layoutWidget_19;
+    QHBoxLayout *horizontalLayout_31;
+    QPushButton *dashboard_button_7;
+    QPushButton *fund_tranfer_button_7;
+    QPushButton *cards_button_7;
+    QPushButton *bill_pay_button_7;
+    QPushButton *beneficiary_button_7;
+    QPushButton *services_button_7;
+    QPushButton *home_schedular_button_7;
+    QPushButton *profile_button_7;
+    QPushButton *activity_button_7;
     QWidget *cards_page;
     QGroupBox *cards_page_box;
     QGroupBox *cards_available_box;
@@ -285,6 +318,17 @@ public:
     QLabel *label_33;
     QSpacerItem *horizontalSpacer_16;
     QSpacerItem *horizontalSpacer_17;
+    QWidget *layoutWidget_20;
+    QHBoxLayout *horizontalLayout_32;
+    QPushButton *dashboard_button_8;
+    QPushButton *fund_tranfer_button_8;
+    QPushButton *cards_button_8;
+    QPushButton *bill_pay_button_8;
+    QPushButton *beneficiary_button_8;
+    QPushButton *services_button_8;
+    QPushButton *home_schedular_button_8;
+    QPushButton *profile_button_8;
+    QPushButton *activity_button_8;
     QWidget *ft_page;
     QPushButton *home_statement_button_3;
     QPushButton *home_statement_button_4;
@@ -320,18 +364,18 @@ public:
     QLabel *label_35;
     QSpacerItem *horizontalSpacer_20;
     QSpacerItem *horizontalSpacer_21;
+    QWidget *layoutWidget_21;
+    QHBoxLayout *horizontalLayout_33;
+    QPushButton *dashboard_button_9;
+    QPushButton *fund_tranfer_button_9;
+    QPushButton *cards_button_9;
+    QPushButton *bill_pay_button_9;
+    QPushButton *beneficiary_button_9;
+    QPushButton *services_button_9;
+    QPushButton *home_schedular_button_9;
+    QPushButton *profile_button_9;
+    QPushButton *activity_button_9;
     QWidget *profile_page;
-    QWidget *layoutWidget_2;
-    QHBoxLayout *horizontalLayout_4;
-    QPushButton *dashboard_button_3;
-    QPushButton *fund_tranfer_button_3;
-    QPushButton *cards_button_3;
-    QPushButton *bill_pay_button_3;
-    QPushButton *beneficiary_button_3;
-    QPushButton *services_button_3;
-    QPushButton *home_schedular_button_3;
-    QPushButton *profile_button_3;
-    QPushButton *activity_button_3;
     QLabel *profile_customer_details_label;
     QGroupBox *profile_box;
     QWidget *layoutWidget10;
@@ -366,6 +410,17 @@ public:
     QLabel *label_37;
     QSpacerItem *horizontalSpacer_24;
     QSpacerItem *horizontalSpacer_25;
+    QWidget *layoutWidget_22;
+    QHBoxLayout *horizontalLayout_34;
+    QPushButton *dashboard_button_10;
+    QPushButton *fund_tranfer_button_10;
+    QPushButton *cards_button_10;
+    QPushButton *bill_pay_button_10;
+    QPushButton *beneficiary_button_10;
+    QPushButton *services_button_10;
+    QPushButton *home_schedular_button_10;
+    QPushButton *profile_button_10;
+    QPushButton *activity_button_10;
     QWidget *sign_up_page;
     QGroupBox *groupBox;
     QLabel *label_3;
@@ -427,7 +482,7 @@ public:
     QWidget *forget_page;
     QGroupBox *forget_container;
     QLabel *forget_label;
-    QWidget *widget;
+    QWidget *layoutWidget17;
     QGridLayout *gridLayout_28;
     QComboBox *forget_select_type;
     QLabel *forget_mobile_code;
@@ -918,6 +973,77 @@ public:
 
         gridLayout_19->addItem(horizontalSpacer_11, 1, 3, 1, 1);
 
+        layoutWidget_2 = new QWidget(activity_page);
+        layoutWidget_2->setObjectName("layoutWidget_2");
+        layoutWidget_2->setGeometry(QRect(10, 60, 776, 27));
+        horizontalLayout_3 = new QHBoxLayout(layoutWidget_2);
+        horizontalLayout_3->setSpacing(3);
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalLayout_3->setSizeConstraint(QLayout::SetMinimumSize);
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        dashboard_button_2 = new QPushButton(layoutWidget_2);
+        dashboard_button_2->setObjectName("dashboard_button_2");
+        sizePolicy.setHeightForWidth(dashboard_button_2->sizePolicy().hasHeightForWidth());
+        dashboard_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(dashboard_button_2);
+
+        fund_tranfer_button_2 = new QPushButton(layoutWidget_2);
+        fund_tranfer_button_2->setObjectName("fund_tranfer_button_2");
+        sizePolicy.setHeightForWidth(fund_tranfer_button_2->sizePolicy().hasHeightForWidth());
+        fund_tranfer_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(fund_tranfer_button_2);
+
+        cards_button_2 = new QPushButton(layoutWidget_2);
+        cards_button_2->setObjectName("cards_button_2");
+        sizePolicy.setHeightForWidth(cards_button_2->sizePolicy().hasHeightForWidth());
+        cards_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(cards_button_2);
+
+        bill_pay_button_2 = new QPushButton(layoutWidget_2);
+        bill_pay_button_2->setObjectName("bill_pay_button_2");
+        sizePolicy.setHeightForWidth(bill_pay_button_2->sizePolicy().hasHeightForWidth());
+        bill_pay_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(bill_pay_button_2);
+
+        beneficiary_button_2 = new QPushButton(layoutWidget_2);
+        beneficiary_button_2->setObjectName("beneficiary_button_2");
+        sizePolicy.setHeightForWidth(beneficiary_button_2->sizePolicy().hasHeightForWidth());
+        beneficiary_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(beneficiary_button_2);
+
+        services_button_2 = new QPushButton(layoutWidget_2);
+        services_button_2->setObjectName("services_button_2");
+        sizePolicy.setHeightForWidth(services_button_2->sizePolicy().hasHeightForWidth());
+        services_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(services_button_2);
+
+        home_schedular_button_2 = new QPushButton(layoutWidget_2);
+        home_schedular_button_2->setObjectName("home_schedular_button_2");
+        sizePolicy.setHeightForWidth(home_schedular_button_2->sizePolicy().hasHeightForWidth());
+        home_schedular_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(home_schedular_button_2);
+
+        profile_button_2 = new QPushButton(layoutWidget_2);
+        profile_button_2->setObjectName("profile_button_2");
+        sizePolicy.setHeightForWidth(profile_button_2->sizePolicy().hasHeightForWidth());
+        profile_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(profile_button_2);
+
+        activity_button_2 = new QPushButton(layoutWidget_2);
+        activity_button_2->setObjectName("activity_button_2");
+        sizePolicy.setHeightForWidth(activity_button_2->sizePolicy().hasHeightForWidth());
+        activity_button_2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_3->addWidget(activity_button_2);
+
         stackedWidget->addWidget(activity_page);
         Services_page = new QWidget();
         Services_page->setObjectName("Services_page");
@@ -1023,73 +1149,73 @@ public:
         layoutWidget_3 = new QWidget(Services_page);
         layoutWidget_3->setObjectName("layoutWidget_3");
         layoutWidget_3->setGeometry(QRect(10, 60, 776, 27));
-        horizontalLayout_3 = new QHBoxLayout(layoutWidget_3);
-        horizontalLayout_3->setSpacing(3);
-        horizontalLayout_3->setObjectName("horizontalLayout_3");
-        horizontalLayout_3->setSizeConstraint(QLayout::SetMinimumSize);
-        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        dashboard_button_2 = new QPushButton(layoutWidget_3);
-        dashboard_button_2->setObjectName("dashboard_button_2");
-        sizePolicy.setHeightForWidth(dashboard_button_2->sizePolicy().hasHeightForWidth());
-        dashboard_button_2->setSizePolicy(sizePolicy);
+        horizontalLayout_28 = new QHBoxLayout(layoutWidget_3);
+        horizontalLayout_28->setSpacing(3);
+        horizontalLayout_28->setObjectName("horizontalLayout_28");
+        horizontalLayout_28->setSizeConstraint(QLayout::SetMinimumSize);
+        horizontalLayout_28->setContentsMargins(0, 0, 0, 0);
+        dashboard_button_4 = new QPushButton(layoutWidget_3);
+        dashboard_button_4->setObjectName("dashboard_button_4");
+        sizePolicy.setHeightForWidth(dashboard_button_4->sizePolicy().hasHeightForWidth());
+        dashboard_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(dashboard_button_2);
+        horizontalLayout_28->addWidget(dashboard_button_4);
 
-        fund_tranfer_button_2 = new QPushButton(layoutWidget_3);
-        fund_tranfer_button_2->setObjectName("fund_tranfer_button_2");
-        sizePolicy.setHeightForWidth(fund_tranfer_button_2->sizePolicy().hasHeightForWidth());
-        fund_tranfer_button_2->setSizePolicy(sizePolicy);
+        fund_tranfer_button_4 = new QPushButton(layoutWidget_3);
+        fund_tranfer_button_4->setObjectName("fund_tranfer_button_4");
+        sizePolicy.setHeightForWidth(fund_tranfer_button_4->sizePolicy().hasHeightForWidth());
+        fund_tranfer_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(fund_tranfer_button_2);
+        horizontalLayout_28->addWidget(fund_tranfer_button_4);
 
-        cards_button_2 = new QPushButton(layoutWidget_3);
-        cards_button_2->setObjectName("cards_button_2");
-        sizePolicy.setHeightForWidth(cards_button_2->sizePolicy().hasHeightForWidth());
-        cards_button_2->setSizePolicy(sizePolicy);
+        cards_button_4 = new QPushButton(layoutWidget_3);
+        cards_button_4->setObjectName("cards_button_4");
+        sizePolicy.setHeightForWidth(cards_button_4->sizePolicy().hasHeightForWidth());
+        cards_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(cards_button_2);
+        horizontalLayout_28->addWidget(cards_button_4);
 
-        bill_pay_button_2 = new QPushButton(layoutWidget_3);
-        bill_pay_button_2->setObjectName("bill_pay_button_2");
-        sizePolicy.setHeightForWidth(bill_pay_button_2->sizePolicy().hasHeightForWidth());
-        bill_pay_button_2->setSizePolicy(sizePolicy);
+        bill_pay_button_4 = new QPushButton(layoutWidget_3);
+        bill_pay_button_4->setObjectName("bill_pay_button_4");
+        sizePolicy.setHeightForWidth(bill_pay_button_4->sizePolicy().hasHeightForWidth());
+        bill_pay_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(bill_pay_button_2);
+        horizontalLayout_28->addWidget(bill_pay_button_4);
 
-        beneficiary_button_2 = new QPushButton(layoutWidget_3);
-        beneficiary_button_2->setObjectName("beneficiary_button_2");
-        sizePolicy.setHeightForWidth(beneficiary_button_2->sizePolicy().hasHeightForWidth());
-        beneficiary_button_2->setSizePolicy(sizePolicy);
+        beneficiary_button_4 = new QPushButton(layoutWidget_3);
+        beneficiary_button_4->setObjectName("beneficiary_button_4");
+        sizePolicy.setHeightForWidth(beneficiary_button_4->sizePolicy().hasHeightForWidth());
+        beneficiary_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(beneficiary_button_2);
+        horizontalLayout_28->addWidget(beneficiary_button_4);
 
-        services_button_2 = new QPushButton(layoutWidget_3);
-        services_button_2->setObjectName("services_button_2");
-        sizePolicy.setHeightForWidth(services_button_2->sizePolicy().hasHeightForWidth());
-        services_button_2->setSizePolicy(sizePolicy);
+        services_button_4 = new QPushButton(layoutWidget_3);
+        services_button_4->setObjectName("services_button_4");
+        sizePolicy.setHeightForWidth(services_button_4->sizePolicy().hasHeightForWidth());
+        services_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(services_button_2);
+        horizontalLayout_28->addWidget(services_button_4);
 
-        home_schedular_button_2 = new QPushButton(layoutWidget_3);
-        home_schedular_button_2->setObjectName("home_schedular_button_2");
-        sizePolicy.setHeightForWidth(home_schedular_button_2->sizePolicy().hasHeightForWidth());
-        home_schedular_button_2->setSizePolicy(sizePolicy);
+        home_schedular_button_4 = new QPushButton(layoutWidget_3);
+        home_schedular_button_4->setObjectName("home_schedular_button_4");
+        sizePolicy.setHeightForWidth(home_schedular_button_4->sizePolicy().hasHeightForWidth());
+        home_schedular_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(home_schedular_button_2);
+        horizontalLayout_28->addWidget(home_schedular_button_4);
 
-        profile_button_2 = new QPushButton(layoutWidget_3);
-        profile_button_2->setObjectName("profile_button_2");
-        sizePolicy.setHeightForWidth(profile_button_2->sizePolicy().hasHeightForWidth());
-        profile_button_2->setSizePolicy(sizePolicy);
+        profile_button_4 = new QPushButton(layoutWidget_3);
+        profile_button_4->setObjectName("profile_button_4");
+        sizePolicy.setHeightForWidth(profile_button_4->sizePolicy().hasHeightForWidth());
+        profile_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(profile_button_2);
+        horizontalLayout_28->addWidget(profile_button_4);
 
-        activity_button_2 = new QPushButton(layoutWidget_3);
-        activity_button_2->setObjectName("activity_button_2");
-        sizePolicy.setHeightForWidth(activity_button_2->sizePolicy().hasHeightForWidth());
-        activity_button_2->setSizePolicy(sizePolicy);
+        activity_button_4 = new QPushButton(layoutWidget_3);
+        activity_button_4->setObjectName("activity_button_4");
+        sizePolicy.setHeightForWidth(activity_button_4->sizePolicy().hasHeightForWidth());
+        activity_button_4->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(activity_button_2);
+        horizontalLayout_28->addWidget(activity_button_4);
 
         stackedWidget->addWidget(Services_page);
         beneficiary_page = new QWidget();
@@ -1218,6 +1344,77 @@ public:
         horizontalSpacer_13 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_20->addItem(horizontalSpacer_13, 1, 3, 1, 1);
+
+        layoutWidget_18 = new QWidget(beneficiary_page);
+        layoutWidget_18->setObjectName("layoutWidget_18");
+        layoutWidget_18->setGeometry(QRect(10, 60, 776, 27));
+        horizontalLayout_29 = new QHBoxLayout(layoutWidget_18);
+        horizontalLayout_29->setSpacing(3);
+        horizontalLayout_29->setObjectName("horizontalLayout_29");
+        horizontalLayout_29->setSizeConstraint(QLayout::SetMinimumSize);
+        horizontalLayout_29->setContentsMargins(0, 0, 0, 0);
+        dashboard_button_5 = new QPushButton(layoutWidget_18);
+        dashboard_button_5->setObjectName("dashboard_button_5");
+        sizePolicy.setHeightForWidth(dashboard_button_5->sizePolicy().hasHeightForWidth());
+        dashboard_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(dashboard_button_5);
+
+        fund_tranfer_button_5 = new QPushButton(layoutWidget_18);
+        fund_tranfer_button_5->setObjectName("fund_tranfer_button_5");
+        sizePolicy.setHeightForWidth(fund_tranfer_button_5->sizePolicy().hasHeightForWidth());
+        fund_tranfer_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(fund_tranfer_button_5);
+
+        cards_button_5 = new QPushButton(layoutWidget_18);
+        cards_button_5->setObjectName("cards_button_5");
+        sizePolicy.setHeightForWidth(cards_button_5->sizePolicy().hasHeightForWidth());
+        cards_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(cards_button_5);
+
+        bill_pay_button_5 = new QPushButton(layoutWidget_18);
+        bill_pay_button_5->setObjectName("bill_pay_button_5");
+        sizePolicy.setHeightForWidth(bill_pay_button_5->sizePolicy().hasHeightForWidth());
+        bill_pay_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(bill_pay_button_5);
+
+        beneficiary_button_5 = new QPushButton(layoutWidget_18);
+        beneficiary_button_5->setObjectName("beneficiary_button_5");
+        sizePolicy.setHeightForWidth(beneficiary_button_5->sizePolicy().hasHeightForWidth());
+        beneficiary_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(beneficiary_button_5);
+
+        services_button_5 = new QPushButton(layoutWidget_18);
+        services_button_5->setObjectName("services_button_5");
+        sizePolicy.setHeightForWidth(services_button_5->sizePolicy().hasHeightForWidth());
+        services_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(services_button_5);
+
+        home_schedular_button_5 = new QPushButton(layoutWidget_18);
+        home_schedular_button_5->setObjectName("home_schedular_button_5");
+        sizePolicy.setHeightForWidth(home_schedular_button_5->sizePolicy().hasHeightForWidth());
+        home_schedular_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(home_schedular_button_5);
+
+        profile_button_5 = new QPushButton(layoutWidget_18);
+        profile_button_5->setObjectName("profile_button_5");
+        sizePolicy.setHeightForWidth(profile_button_5->sizePolicy().hasHeightForWidth());
+        profile_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(profile_button_5);
+
+        activity_button_5 = new QPushButton(layoutWidget_18);
+        activity_button_5->setObjectName("activity_button_5");
+        sizePolicy.setHeightForWidth(activity_button_5->sizePolicy().hasHeightForWidth());
+        activity_button_5->setSizePolicy(sizePolicy);
+
+        horizontalLayout_29->addWidget(activity_button_5);
 
         stackedWidget->addWidget(beneficiary_page);
         bill_pay_page = new QWidget();
@@ -1411,6 +1608,77 @@ public:
         horizontalSpacer_15 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_21->addItem(horizontalSpacer_15, 1, 3, 1, 1);
+
+        layoutWidget_19 = new QWidget(bill_pay_page);
+        layoutWidget_19->setObjectName("layoutWidget_19");
+        layoutWidget_19->setGeometry(QRect(10, 60, 776, 27));
+        horizontalLayout_31 = new QHBoxLayout(layoutWidget_19);
+        horizontalLayout_31->setSpacing(3);
+        horizontalLayout_31->setObjectName("horizontalLayout_31");
+        horizontalLayout_31->setSizeConstraint(QLayout::SetMinimumSize);
+        horizontalLayout_31->setContentsMargins(0, 0, 0, 0);
+        dashboard_button_7 = new QPushButton(layoutWidget_19);
+        dashboard_button_7->setObjectName("dashboard_button_7");
+        sizePolicy.setHeightForWidth(dashboard_button_7->sizePolicy().hasHeightForWidth());
+        dashboard_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(dashboard_button_7);
+
+        fund_tranfer_button_7 = new QPushButton(layoutWidget_19);
+        fund_tranfer_button_7->setObjectName("fund_tranfer_button_7");
+        sizePolicy.setHeightForWidth(fund_tranfer_button_7->sizePolicy().hasHeightForWidth());
+        fund_tranfer_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(fund_tranfer_button_7);
+
+        cards_button_7 = new QPushButton(layoutWidget_19);
+        cards_button_7->setObjectName("cards_button_7");
+        sizePolicy.setHeightForWidth(cards_button_7->sizePolicy().hasHeightForWidth());
+        cards_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(cards_button_7);
+
+        bill_pay_button_7 = new QPushButton(layoutWidget_19);
+        bill_pay_button_7->setObjectName("bill_pay_button_7");
+        sizePolicy.setHeightForWidth(bill_pay_button_7->sizePolicy().hasHeightForWidth());
+        bill_pay_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(bill_pay_button_7);
+
+        beneficiary_button_7 = new QPushButton(layoutWidget_19);
+        beneficiary_button_7->setObjectName("beneficiary_button_7");
+        sizePolicy.setHeightForWidth(beneficiary_button_7->sizePolicy().hasHeightForWidth());
+        beneficiary_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(beneficiary_button_7);
+
+        services_button_7 = new QPushButton(layoutWidget_19);
+        services_button_7->setObjectName("services_button_7");
+        sizePolicy.setHeightForWidth(services_button_7->sizePolicy().hasHeightForWidth());
+        services_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(services_button_7);
+
+        home_schedular_button_7 = new QPushButton(layoutWidget_19);
+        home_schedular_button_7->setObjectName("home_schedular_button_7");
+        sizePolicy.setHeightForWidth(home_schedular_button_7->sizePolicy().hasHeightForWidth());
+        home_schedular_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(home_schedular_button_7);
+
+        profile_button_7 = new QPushButton(layoutWidget_19);
+        profile_button_7->setObjectName("profile_button_7");
+        sizePolicy.setHeightForWidth(profile_button_7->sizePolicy().hasHeightForWidth());
+        profile_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(profile_button_7);
+
+        activity_button_7 = new QPushButton(layoutWidget_19);
+        activity_button_7->setObjectName("activity_button_7");
+        sizePolicy.setHeightForWidth(activity_button_7->sizePolicy().hasHeightForWidth());
+        activity_button_7->setSizePolicy(sizePolicy);
+
+        horizontalLayout_31->addWidget(activity_button_7);
 
         stackedWidget->addWidget(bill_pay_page);
         cards_page = new QWidget();
@@ -1718,6 +1986,77 @@ public:
 
         gridLayout_22->addItem(horizontalSpacer_17, 1, 3, 1, 1);
 
+        layoutWidget_20 = new QWidget(cards_page);
+        layoutWidget_20->setObjectName("layoutWidget_20");
+        layoutWidget_20->setGeometry(QRect(10, 60, 776, 27));
+        horizontalLayout_32 = new QHBoxLayout(layoutWidget_20);
+        horizontalLayout_32->setSpacing(3);
+        horizontalLayout_32->setObjectName("horizontalLayout_32");
+        horizontalLayout_32->setSizeConstraint(QLayout::SetMinimumSize);
+        horizontalLayout_32->setContentsMargins(0, 0, 0, 0);
+        dashboard_button_8 = new QPushButton(layoutWidget_20);
+        dashboard_button_8->setObjectName("dashboard_button_8");
+        sizePolicy.setHeightForWidth(dashboard_button_8->sizePolicy().hasHeightForWidth());
+        dashboard_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(dashboard_button_8);
+
+        fund_tranfer_button_8 = new QPushButton(layoutWidget_20);
+        fund_tranfer_button_8->setObjectName("fund_tranfer_button_8");
+        sizePolicy.setHeightForWidth(fund_tranfer_button_8->sizePolicy().hasHeightForWidth());
+        fund_tranfer_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(fund_tranfer_button_8);
+
+        cards_button_8 = new QPushButton(layoutWidget_20);
+        cards_button_8->setObjectName("cards_button_8");
+        sizePolicy.setHeightForWidth(cards_button_8->sizePolicy().hasHeightForWidth());
+        cards_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(cards_button_8);
+
+        bill_pay_button_8 = new QPushButton(layoutWidget_20);
+        bill_pay_button_8->setObjectName("bill_pay_button_8");
+        sizePolicy.setHeightForWidth(bill_pay_button_8->sizePolicy().hasHeightForWidth());
+        bill_pay_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(bill_pay_button_8);
+
+        beneficiary_button_8 = new QPushButton(layoutWidget_20);
+        beneficiary_button_8->setObjectName("beneficiary_button_8");
+        sizePolicy.setHeightForWidth(beneficiary_button_8->sizePolicy().hasHeightForWidth());
+        beneficiary_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(beneficiary_button_8);
+
+        services_button_8 = new QPushButton(layoutWidget_20);
+        services_button_8->setObjectName("services_button_8");
+        sizePolicy.setHeightForWidth(services_button_8->sizePolicy().hasHeightForWidth());
+        services_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(services_button_8);
+
+        home_schedular_button_8 = new QPushButton(layoutWidget_20);
+        home_schedular_button_8->setObjectName("home_schedular_button_8");
+        sizePolicy.setHeightForWidth(home_schedular_button_8->sizePolicy().hasHeightForWidth());
+        home_schedular_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(home_schedular_button_8);
+
+        profile_button_8 = new QPushButton(layoutWidget_20);
+        profile_button_8->setObjectName("profile_button_8");
+        sizePolicy.setHeightForWidth(profile_button_8->sizePolicy().hasHeightForWidth());
+        profile_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(profile_button_8);
+
+        activity_button_8 = new QPushButton(layoutWidget_20);
+        activity_button_8->setObjectName("activity_button_8");
+        sizePolicy.setHeightForWidth(activity_button_8->sizePolicy().hasHeightForWidth());
+        activity_button_8->setSizePolicy(sizePolicy);
+
+        horizontalLayout_32->addWidget(activity_button_8);
+
         stackedWidget->addWidget(cards_page);
         ft_page = new QWidget();
         ft_page->setObjectName("ft_page");
@@ -1869,80 +2208,80 @@ public:
 
         gridLayout_24->addItem(horizontalSpacer_21, 1, 3, 1, 1);
 
+        layoutWidget_21 = new QWidget(ft_page);
+        layoutWidget_21->setObjectName("layoutWidget_21");
+        layoutWidget_21->setGeometry(QRect(10, 60, 776, 27));
+        horizontalLayout_33 = new QHBoxLayout(layoutWidget_21);
+        horizontalLayout_33->setSpacing(3);
+        horizontalLayout_33->setObjectName("horizontalLayout_33");
+        horizontalLayout_33->setSizeConstraint(QLayout::SetMinimumSize);
+        horizontalLayout_33->setContentsMargins(0, 0, 0, 0);
+        dashboard_button_9 = new QPushButton(layoutWidget_21);
+        dashboard_button_9->setObjectName("dashboard_button_9");
+        sizePolicy.setHeightForWidth(dashboard_button_9->sizePolicy().hasHeightForWidth());
+        dashboard_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(dashboard_button_9);
+
+        fund_tranfer_button_9 = new QPushButton(layoutWidget_21);
+        fund_tranfer_button_9->setObjectName("fund_tranfer_button_9");
+        sizePolicy.setHeightForWidth(fund_tranfer_button_9->sizePolicy().hasHeightForWidth());
+        fund_tranfer_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(fund_tranfer_button_9);
+
+        cards_button_9 = new QPushButton(layoutWidget_21);
+        cards_button_9->setObjectName("cards_button_9");
+        sizePolicy.setHeightForWidth(cards_button_9->sizePolicy().hasHeightForWidth());
+        cards_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(cards_button_9);
+
+        bill_pay_button_9 = new QPushButton(layoutWidget_21);
+        bill_pay_button_9->setObjectName("bill_pay_button_9");
+        sizePolicy.setHeightForWidth(bill_pay_button_9->sizePolicy().hasHeightForWidth());
+        bill_pay_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(bill_pay_button_9);
+
+        beneficiary_button_9 = new QPushButton(layoutWidget_21);
+        beneficiary_button_9->setObjectName("beneficiary_button_9");
+        sizePolicy.setHeightForWidth(beneficiary_button_9->sizePolicy().hasHeightForWidth());
+        beneficiary_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(beneficiary_button_9);
+
+        services_button_9 = new QPushButton(layoutWidget_21);
+        services_button_9->setObjectName("services_button_9");
+        sizePolicy.setHeightForWidth(services_button_9->sizePolicy().hasHeightForWidth());
+        services_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(services_button_9);
+
+        home_schedular_button_9 = new QPushButton(layoutWidget_21);
+        home_schedular_button_9->setObjectName("home_schedular_button_9");
+        sizePolicy.setHeightForWidth(home_schedular_button_9->sizePolicy().hasHeightForWidth());
+        home_schedular_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(home_schedular_button_9);
+
+        profile_button_9 = new QPushButton(layoutWidget_21);
+        profile_button_9->setObjectName("profile_button_9");
+        sizePolicy.setHeightForWidth(profile_button_9->sizePolicy().hasHeightForWidth());
+        profile_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(profile_button_9);
+
+        activity_button_9 = new QPushButton(layoutWidget_21);
+        activity_button_9->setObjectName("activity_button_9");
+        sizePolicy.setHeightForWidth(activity_button_9->sizePolicy().hasHeightForWidth());
+        activity_button_9->setSizePolicy(sizePolicy);
+
+        horizontalLayout_33->addWidget(activity_button_9);
+
         stackedWidget->addWidget(ft_page);
         profile_page = new QWidget();
         profile_page->setObjectName("profile_page");
-        layoutWidget_2 = new QWidget(profile_page);
-        layoutWidget_2->setObjectName("layoutWidget_2");
-        layoutWidget_2->setGeometry(QRect(10, 70, 776, 27));
-        horizontalLayout_4 = new QHBoxLayout(layoutWidget_2);
-        horizontalLayout_4->setSpacing(3);
-        horizontalLayout_4->setObjectName("horizontalLayout_4");
-        horizontalLayout_4->setSizeConstraint(QLayout::SetMinimumSize);
-        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
-        dashboard_button_3 = new QPushButton(layoutWidget_2);
-        dashboard_button_3->setObjectName("dashboard_button_3");
-        sizePolicy.setHeightForWidth(dashboard_button_3->sizePolicy().hasHeightForWidth());
-        dashboard_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(dashboard_button_3);
-
-        fund_tranfer_button_3 = new QPushButton(layoutWidget_2);
-        fund_tranfer_button_3->setObjectName("fund_tranfer_button_3");
-        sizePolicy.setHeightForWidth(fund_tranfer_button_3->sizePolicy().hasHeightForWidth());
-        fund_tranfer_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(fund_tranfer_button_3);
-
-        cards_button_3 = new QPushButton(layoutWidget_2);
-        cards_button_3->setObjectName("cards_button_3");
-        sizePolicy.setHeightForWidth(cards_button_3->sizePolicy().hasHeightForWidth());
-        cards_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(cards_button_3);
-
-        bill_pay_button_3 = new QPushButton(layoutWidget_2);
-        bill_pay_button_3->setObjectName("bill_pay_button_3");
-        sizePolicy.setHeightForWidth(bill_pay_button_3->sizePolicy().hasHeightForWidth());
-        bill_pay_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(bill_pay_button_3);
-
-        beneficiary_button_3 = new QPushButton(layoutWidget_2);
-        beneficiary_button_3->setObjectName("beneficiary_button_3");
-        sizePolicy.setHeightForWidth(beneficiary_button_3->sizePolicy().hasHeightForWidth());
-        beneficiary_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(beneficiary_button_3);
-
-        services_button_3 = new QPushButton(layoutWidget_2);
-        services_button_3->setObjectName("services_button_3");
-        sizePolicy.setHeightForWidth(services_button_3->sizePolicy().hasHeightForWidth());
-        services_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(services_button_3);
-
-        home_schedular_button_3 = new QPushButton(layoutWidget_2);
-        home_schedular_button_3->setObjectName("home_schedular_button_3");
-        sizePolicy.setHeightForWidth(home_schedular_button_3->sizePolicy().hasHeightForWidth());
-        home_schedular_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(home_schedular_button_3);
-
-        profile_button_3 = new QPushButton(layoutWidget_2);
-        profile_button_3->setObjectName("profile_button_3");
-        sizePolicy.setHeightForWidth(profile_button_3->sizePolicy().hasHeightForWidth());
-        profile_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(profile_button_3);
-
-        activity_button_3 = new QPushButton(layoutWidget_2);
-        activity_button_3->setObjectName("activity_button_3");
-        sizePolicy.setHeightForWidth(activity_button_3->sizePolicy().hasHeightForWidth());
-        activity_button_3->setSizePolicy(sizePolicy);
-
-        horizontalLayout_4->addWidget(activity_button_3);
-
         profile_customer_details_label = new QLabel(profile_page);
         profile_customer_details_label->setObjectName("profile_customer_details_label");
         profile_customer_details_label->setGeometry(QRect(10, 130, 161, 21));
@@ -2125,6 +2464,77 @@ public:
         horizontalSpacer_25 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_26->addItem(horizontalSpacer_25, 1, 3, 1, 1);
+
+        layoutWidget_22 = new QWidget(profile_page);
+        layoutWidget_22->setObjectName("layoutWidget_22");
+        layoutWidget_22->setGeometry(QRect(10, 60, 776, 27));
+        horizontalLayout_34 = new QHBoxLayout(layoutWidget_22);
+        horizontalLayout_34->setSpacing(3);
+        horizontalLayout_34->setObjectName("horizontalLayout_34");
+        horizontalLayout_34->setSizeConstraint(QLayout::SetMinimumSize);
+        horizontalLayout_34->setContentsMargins(0, 0, 0, 0);
+        dashboard_button_10 = new QPushButton(layoutWidget_22);
+        dashboard_button_10->setObjectName("dashboard_button_10");
+        sizePolicy.setHeightForWidth(dashboard_button_10->sizePolicy().hasHeightForWidth());
+        dashboard_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(dashboard_button_10);
+
+        fund_tranfer_button_10 = new QPushButton(layoutWidget_22);
+        fund_tranfer_button_10->setObjectName("fund_tranfer_button_10");
+        sizePolicy.setHeightForWidth(fund_tranfer_button_10->sizePolicy().hasHeightForWidth());
+        fund_tranfer_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(fund_tranfer_button_10);
+
+        cards_button_10 = new QPushButton(layoutWidget_22);
+        cards_button_10->setObjectName("cards_button_10");
+        sizePolicy.setHeightForWidth(cards_button_10->sizePolicy().hasHeightForWidth());
+        cards_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(cards_button_10);
+
+        bill_pay_button_10 = new QPushButton(layoutWidget_22);
+        bill_pay_button_10->setObjectName("bill_pay_button_10");
+        sizePolicy.setHeightForWidth(bill_pay_button_10->sizePolicy().hasHeightForWidth());
+        bill_pay_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(bill_pay_button_10);
+
+        beneficiary_button_10 = new QPushButton(layoutWidget_22);
+        beneficiary_button_10->setObjectName("beneficiary_button_10");
+        sizePolicy.setHeightForWidth(beneficiary_button_10->sizePolicy().hasHeightForWidth());
+        beneficiary_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(beneficiary_button_10);
+
+        services_button_10 = new QPushButton(layoutWidget_22);
+        services_button_10->setObjectName("services_button_10");
+        sizePolicy.setHeightForWidth(services_button_10->sizePolicy().hasHeightForWidth());
+        services_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(services_button_10);
+
+        home_schedular_button_10 = new QPushButton(layoutWidget_22);
+        home_schedular_button_10->setObjectName("home_schedular_button_10");
+        sizePolicy.setHeightForWidth(home_schedular_button_10->sizePolicy().hasHeightForWidth());
+        home_schedular_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(home_schedular_button_10);
+
+        profile_button_10 = new QPushButton(layoutWidget_22);
+        profile_button_10->setObjectName("profile_button_10");
+        sizePolicy.setHeightForWidth(profile_button_10->sizePolicy().hasHeightForWidth());
+        profile_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(profile_button_10);
+
+        activity_button_10 = new QPushButton(layoutWidget_22);
+        activity_button_10->setObjectName("activity_button_10");
+        sizePolicy.setHeightForWidth(activity_button_10->sizePolicy().hasHeightForWidth());
+        activity_button_10->setSizePolicy(sizePolicy);
+
+        horizontalLayout_34->addWidget(activity_button_10);
 
         stackedWidget->addWidget(profile_page);
         sign_up_page = new QWidget();
@@ -2430,13 +2840,13 @@ public:
         forget_label->setObjectName("forget_label");
         forget_label->setGeometry(QRect(13, 16, 249, 22));
         forget_label->setFont(font3);
-        widget = new QWidget(forget_container);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(10, 50, 351, 261));
-        gridLayout_28 = new QGridLayout(widget);
+        layoutWidget17 = new QWidget(forget_container);
+        layoutWidget17->setObjectName("layoutWidget17");
+        layoutWidget17->setGeometry(QRect(10, 50, 351, 261));
+        gridLayout_28 = new QGridLayout(layoutWidget17);
         gridLayout_28->setObjectName("gridLayout_28");
         gridLayout_28->setContentsMargins(0, 0, 0, 0);
-        forget_select_type = new QComboBox(widget);
+        forget_select_type = new QComboBox(layoutWidget17);
         forget_select_type->addItem(QString());
         forget_select_type->addItem(QString());
         forget_select_type->addItem(QString());
@@ -2452,22 +2862,22 @@ public:
 
         gridLayout_28->addWidget(forget_select_type, 0, 0, 1, 4);
 
-        forget_mobile_code = new QLabel(widget);
+        forget_mobile_code = new QLabel(layoutWidget17);
         forget_mobile_code->setObjectName("forget_mobile_code");
 
         gridLayout_28->addWidget(forget_mobile_code, 2, 0, 1, 1);
 
-        forget_mobile_no_input = new QLineEdit(widget);
+        forget_mobile_no_input = new QLineEdit(layoutWidget17);
         forget_mobile_no_input->setObjectName("forget_mobile_no_input");
 
         gridLayout_28->addWidget(forget_mobile_no_input, 2, 1, 1, 3);
 
-        forget_email_input = new QLineEdit(widget);
+        forget_email_input = new QLineEdit(layoutWidget17);
         forget_email_input->setObjectName("forget_email_input");
 
         gridLayout_28->addWidget(forget_email_input, 3, 0, 1, 4);
 
-        forget_back_button = new QPushButton(widget);
+        forget_back_button = new QPushButton(layoutWidget17);
         forget_back_button->setObjectName("forget_back_button");
         sizePolicy.setHeightForWidth(forget_back_button->sizePolicy().hasHeightForWidth());
         forget_back_button->setSizePolicy(sizePolicy);
@@ -2475,7 +2885,7 @@ public:
 
         gridLayout_28->addWidget(forget_back_button, 4, 0, 1, 2);
 
-        forget_submit_button = new QPushButton(widget);
+        forget_submit_button = new QPushButton(layoutWidget17);
         forget_submit_button->setObjectName("forget_submit_button");
         QSizePolicy sizePolicy8(QSizePolicy::Ignored, QSizePolicy::Fixed);
         sizePolicy8.setHorizontalStretch(0);
@@ -2486,7 +2896,7 @@ public:
 
         gridLayout_28->addWidget(forget_submit_button, 4, 2, 1, 2);
 
-        forget_birth_day = new QComboBox(widget);
+        forget_birth_day = new QComboBox(layoutWidget17);
         forget_birth_day->addItem(QString());
         forget_birth_day->addItem(QString());
         forget_birth_day->addItem(QString());
@@ -2528,7 +2938,7 @@ public:
 
         gridLayout_28->addWidget(forget_birth_day, 1, 3, 1, 1);
 
-        forget_birth_month = new QComboBox(widget);
+        forget_birth_month = new QComboBox(layoutWidget17);
         forget_birth_month->addItem(QString());
         forget_birth_month->addItem(QString());
         forget_birth_month->addItem(QString());
@@ -2551,7 +2961,7 @@ public:
 
         gridLayout_28->addWidget(forget_birth_month, 1, 2, 1, 1);
 
-        forget_birth_year = new QComboBox(widget);
+        forget_birth_year = new QComboBox(layoutWidget17);
         forget_birth_year->addItem(QString());
         forget_birth_year->addItem(QString());
         forget_birth_year->addItem(QString());
@@ -2626,7 +3036,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(8);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -2728,6 +3138,15 @@ public:
         login_address_label2_7->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
         login_support_logo_7->setText(QString());
         label_30->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
+        dashboard_button_2->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
+        fund_tranfer_button_2->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
+        cards_button_2->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
+        bill_pay_button_2->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
+        beneficiary_button_2->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
+        services_button_2->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
+        home_schedular_button_2->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
+        profile_button_2->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        activity_button_2->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
         groupBox_7->setTitle(QCoreApplication::translate("MainWindow", "Services", nullptr));
         label_22->setText(QCoreApplication::translate("MainWindow", "Check Book Request", nullptr));
         comboBox_13->setItemText(0, QCoreApplication::translate("MainWindow", "Select Number of Cheque Leaf", nullptr));
@@ -2743,15 +3162,15 @@ public:
         login_address_label2_6->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
         login_support_logo_6->setText(QString());
         label_29->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
-        dashboard_button_2->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
-        fund_tranfer_button_2->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
-        cards_button_2->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
-        bill_pay_button_2->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
-        beneficiary_button_2->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
-        services_button_2->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
-        home_schedular_button_2->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
-        profile_button_2->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
-        activity_button_2->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
+        dashboard_button_4->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
+        fund_tranfer_button_4->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
+        cards_button_4->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
+        bill_pay_button_4->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
+        beneficiary_button_4->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
+        services_button_4->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
+        home_schedular_button_4->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
+        profile_button_4->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        activity_button_4->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
         groupBox_6->setTitle(QCoreApplication::translate("MainWindow", "Add Beneficiary", nullptr));
         lineEdit_16->setPlaceholderText(QCoreApplication::translate("MainWindow", "Account Number", nullptr));
         comboBox_11->setItemText(0, QCoreApplication::translate("MainWindow", "Branch Name", nullptr));
@@ -2778,6 +3197,15 @@ public:
         login_address_label2_8->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
         login_support_logo_8->setText(QString());
         label_31->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
+        dashboard_button_5->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
+        fund_tranfer_button_5->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
+        cards_button_5->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
+        bill_pay_button_5->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
+        beneficiary_button_5->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
+        services_button_5->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
+        home_schedular_button_5->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
+        profile_button_5->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        activity_button_5->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "Utility Bill", nullptr));
         comboBox_6->setItemText(0, QCoreApplication::translate("MainWindow", "Choose Bill Type", nullptr));
@@ -2816,6 +3244,15 @@ public:
         login_address_label2_9->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
         login_support_logo_9->setText(QString());
         label_32->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
+        dashboard_button_7->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
+        fund_tranfer_button_7->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
+        cards_button_7->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
+        bill_pay_button_7->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
+        beneficiary_button_7->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
+        services_button_7->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
+        home_schedular_button_7->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
+        profile_button_7->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        activity_button_7->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
         cards_page_box->setTitle(QCoreApplication::translate("MainWindow", "Cards Details", nullptr));
         cards_available_box->setTitle(QCoreApplication::translate("MainWindow", "Available Cards", nullptr));
         cards_visa_label->setText(QCoreApplication::translate("MainWindow", "Visa Card:", nullptr));
@@ -2854,6 +3291,15 @@ public:
         login_address_label2_10->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
         login_support_logo_10->setText(QString());
         label_33->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
+        dashboard_button_8->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
+        fund_tranfer_button_8->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
+        cards_button_8->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
+        bill_pay_button_8->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
+        beneficiary_button_8->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
+        services_button_8->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
+        home_schedular_button_8->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
+        profile_button_8->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        activity_button_8->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
         home_statement_button_3->setText(QCoreApplication::translate("MainWindow", "Other Bank FT", nullptr));
         home_statement_button_4->setText(QCoreApplication::translate("MainWindow", "Transfer to Mobile Wallet", nullptr));
         home_statement_button_2->setText(QCoreApplication::translate("MainWindow", "Within FT", nullptr));
@@ -2880,15 +3326,15 @@ public:
         login_address_label2_5->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
         login_support_logo_5->setText(QString());
         label_35->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
-        dashboard_button_3->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
-        fund_tranfer_button_3->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
-        cards_button_3->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
-        bill_pay_button_3->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
-        beneficiary_button_3->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
-        services_button_3->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
-        home_schedular_button_3->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
-        profile_button_3->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
-        activity_button_3->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
+        dashboard_button_9->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
+        fund_tranfer_button_9->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
+        cards_button_9->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
+        bill_pay_button_9->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
+        beneficiary_button_9->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
+        services_button_9->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
+        home_schedular_button_9->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
+        profile_button_9->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        activity_button_9->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
         profile_customer_details_label->setText(QCoreApplication::translate("MainWindow", "Customer Details", nullptr));
         profile_box->setTitle(QString());
         profile_full_name_label->setText(QCoreApplication::translate("MainWindow", "Full Name", nullptr));
@@ -2909,6 +3355,15 @@ public:
         login_address_label2_4->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
         login_support_logo_4->setText(QString());
         label_37->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
+        dashboard_button_10->setText(QCoreApplication::translate("MainWindow", "Dashboard", nullptr));
+        fund_tranfer_button_10->setText(QCoreApplication::translate("MainWindow", "Fund Transfer", nullptr));
+        cards_button_10->setText(QCoreApplication::translate("MainWindow", "Cards", nullptr));
+        bill_pay_button_10->setText(QCoreApplication::translate("MainWindow", "Bill Pay", nullptr));
+        beneficiary_button_10->setText(QCoreApplication::translate("MainWindow", "Beneficiary", nullptr));
+        services_button_10->setText(QCoreApplication::translate("MainWindow", "Services", nullptr));
+        home_schedular_button_10->setText(QCoreApplication::translate("MainWindow", "Schedular", nullptr));
+        profile_button_10->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
+        activity_button_10->setText(QCoreApplication::translate("MainWindow", "Activity", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Bank Account Registration form", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#3584e4;\">Account Information</span></p></body></html>", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#3584e4;\">Personal Information</span></p></body></html>", nullptr));
