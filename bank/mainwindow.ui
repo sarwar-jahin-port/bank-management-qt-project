@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>8</number>
+     <number>9</number>
     </property>
     <widget class="QWidget" name="login_page">
      <widget class="QLabel" name="login_password_input_label">
@@ -3971,7 +3971,7 @@ border: 'none'</string>
         <rect>
          <x>20</x>
          <y>180</y>
-         <width>316</width>
+         <width>641</width>
          <height>27</height>
         </rect>
        </property>
@@ -3984,9 +3984,23 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_6">
+         <widget class="QLineEdit" name="signup_birth_date">
           <property name="placeholderText">
            <string>dd/mm//yyyy</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_39">
+          <property name="text">
+           <string>password</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="signup_password">
+          <property name="placeholderText">
+           <string>set your password</string>
           </property>
          </widget>
         </item>
@@ -4016,7 +4030,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox">
+         <widget class="QComboBox" name="signup_account_type">
           <property name="sizePolicy">
            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
             <horstretch>0</horstretch>
@@ -4065,7 +4079,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_2">
+         <widget class="QComboBox" name="signup_branch">
           <property name="sizePolicy">
            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -4135,14 +4149,14 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="signup_first_name">
           <property name="placeholderText">
            <string>first name</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_2">
+         <widget class="QLineEdit" name="signup_last_name">
           <property name="placeholderText">
            <string>last name</string>
           </property>
@@ -4170,7 +4184,7 @@ border: 'none'</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_3">
+           <widget class="QLineEdit" name="signup_phone">
             <property name="placeholderText">
              <string>+880</string>
             </property>
@@ -4188,7 +4202,7 @@ border: 'none'</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_4">
+           <widget class="QLineEdit" name="signup_email">
             <property name="placeholderText">
              <string>sample@gmail.com</string>
             </property>
@@ -4216,7 +4230,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_5">
+         <widget class="QLineEdit" name="signup_address">
           <property name="placeholderText">
            <string/>
           </property>
@@ -4242,7 +4256,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_7">
+         <widget class="QLineEdit" name="signup_city">
           <property name="placeholderText">
            <string/>
           </property>
@@ -4256,7 +4270,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_9">
+         <widget class="QLineEdit" name="signup_postal_code">
           <property name="placeholderText">
            <string/>
           </property>
@@ -4270,7 +4284,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_8">
+         <widget class="QLineEdit" name="signup_country">
           <property name="placeholderText">
            <string/>
           </property>
@@ -4302,7 +4316,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_4">
+         <widget class="QComboBox" name="signup_education">
           <item>
            <property name="text">
             <string>High School or below</string>
@@ -4339,7 +4353,7 @@ border: 'none'</string>
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_5">
+         <widget class="QComboBox" name="signup_identification">
           <item>
            <property name="text">
             <string>National Identity Card</string>
@@ -4363,6 +4377,19 @@ border: 'none'</string>
          </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QPushButton" name="signup_submit_form">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>404</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Submit Form</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="layoutWidget_17">

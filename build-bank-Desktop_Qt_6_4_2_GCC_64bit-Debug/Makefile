@@ -14,10 +14,10 @@ EQ            = =
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -Wextra -fPIC -D_REENTRANT $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++1z -Wall -Wextra -fPIC -D_REENTRANT $(DEFINES)
-INCPATH       = -I../bank -I. -I../../Qt/6.4.2/gcc_64/include -I../../Qt/6.4.2/gcc_64/include/QtWidgets -I../../Qt/6.4.2/gcc_64/include/QtGui -I../../Qt/6.4.2/gcc_64/include/QtCore -I. -I. -I../../Qt/6.4.2/gcc_64/mkspecs/linux-g++
+INCPATH       = -I../bank -I. -I../../Qt/6.4.2/gcc_64/include -I../../Qt/6.4.2/gcc_64/include/QtWidgets -I../../Qt/6.4.2/gcc_64/include/QtGui -I../../Qt/6.4.2/gcc_64/include/QtSql -I../../Qt/6.4.2/gcc_64/include/QtCore -I. -I. -I../../Qt/6.4.2/gcc_64/mkspecs/linux-g++
 QMAKE         = /home/teck-sink/Qt/6.4.2/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -40,7 +40,7 @@ DISTNAME      = bank1.0.0
 DISTDIR = /home/teck-sink/project/build-bank-Desktop_Qt_6_4_2_GCC_64bit-Debug/.tmp/bank1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/home/teck-sink/Qt/6.4.2/gcc_64/lib -Wl,-rpath-link,/home/teck-sink/Qt/6.4.2/gcc_64/lib
-LIBS          = $(SUBLIBS) /home/teck-sink/Qt/6.4.2/gcc_64/lib/libQt6Widgets.so /home/teck-sink/Qt/6.4.2/gcc_64/lib/libQt6Gui.so /home/teck-sink/Qt/6.4.2/gcc_64/lib/libQt6Core.so -lpthread -lGL   
+LIBS          = $(SUBLIBS) /home/teck-sink/Qt/6.4.2/gcc_64/lib/libQt6Widgets.so /home/teck-sink/Qt/6.4.2/gcc_64/lib/libQt6Gui.so /home/teck-sink/Qt/6.4.2/gcc_64/lib/libQt6Sql.so /home/teck-sink/Qt/6.4.2/gcc_64/lib/libQt6Core.so -lpthread -lGL   
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -638,6 +638,7 @@ Makefile: ../bank/bank.pro ../../Qt/6.4.2/gcc_64/mkspecs/linux-g++/qmake.conf ..
 		../bank/resources.qrc \
 		../../Qt/6.4.2/gcc_64/lib/libQt6Widgets.prl \
 		../../Qt/6.4.2/gcc_64/lib/libQt6Gui.prl \
+		../../Qt/6.4.2/gcc_64/lib/libQt6Sql.prl \
 		../../Qt/6.4.2/gcc_64/lib/libQt6Core.prl
 	$(QMAKE) -o Makefile ../bank/bank.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 ../../Qt/6.4.2/gcc_64/mkspecs/features/spec_pre.prf:
@@ -925,6 +926,7 @@ Makefile: ../bank/bank.pro ../../Qt/6.4.2/gcc_64/mkspecs/linux-g++/qmake.conf ..
 ../bank/resources.qrc:
 ../../Qt/6.4.2/gcc_64/lib/libQt6Widgets.prl:
 ../../Qt/6.4.2/gcc_64/lib/libQt6Gui.prl:
+../../Qt/6.4.2/gcc_64/lib/libQt6Sql.prl:
 ../../Qt/6.4.2/gcc_64/lib/libQt6Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../bank/bank.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
@@ -971,7 +973,6 @@ benchmark: first
 compiler_rcc_make_all: qrc_resources.cpp qrc_resources.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_resources.cpp qrc_resources.cpp
-
 qrc_resources.cpp: ../bank/resources.qrc \
 		../../Qt/6.4.2/gcc_64/libexec/rcc \
 		../bank/images/support_icon.jpeg \
@@ -1125,9 +1126,16 @@ moc_mainwindow.cpp: ../bank/mainwindow.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/QTransform \
 		../../Qt/6.4.2/gcc_64/include/QtCore/qnativeinterface.h \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../Qt/6.4.2/gcc_64/include/QtCore/QDebug \
+		../../Qt/6.4.2/gcc_64/include/QtCore/QString \
+		../../Qt/6.4.2/gcc_64/include/QtSql/QSqlDatabase \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qsqldatabase.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsqlglobal.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsql-config.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsqlexports.h \
 		moc_predefs.h \
 		../../Qt/6.4.2/gcc_64/libexec/moc
-	/home/teck-sink/Qt/6.4.2/gcc_64/libexec/moc $(DEFINES) --include /home/teck-sink/project/build-bank-Desktop_Qt_6_4_2_GCC_64bit-Debug/moc_predefs.h -I/home/teck-sink/Qt/6.4.2/gcc_64/mkspecs/linux-g++ -I/home/teck-sink/project/bank -I/home/teck-sink/Qt/6.4.2/gcc_64/include -I/home/teck-sink/Qt/6.4.2/gcc_64/include/QtWidgets -I/home/teck-sink/Qt/6.4.2/gcc_64/include/QtGui -I/home/teck-sink/Qt/6.4.2/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../bank/mainwindow.h -o moc_mainwindow.cpp
+	/home/teck-sink/Qt/6.4.2/gcc_64/libexec/moc $(DEFINES) --include /home/teck-sink/project/build-bank-Desktop_Qt_6_4_2_GCC_64bit-Debug/moc_predefs.h -I/home/teck-sink/Qt/6.4.2/gcc_64/mkspecs/linux-g++ -I/home/teck-sink/project/bank -I/home/teck-sink/Qt/6.4.2/gcc_64/include -I/home/teck-sink/Qt/6.4.2/gcc_64/include/QtWidgets -I/home/teck-sink/Qt/6.4.2/gcc_64/include/QtGui -I/home/teck-sink/Qt/6.4.2/gcc_64/include/QtSql -I/home/teck-sink/Qt/6.4.2/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../bank/mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1288,6 +1296,13 @@ main.o: ../bank/main.cpp ../bank/mainwindow.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/QTransform \
 		../../Qt/6.4.2/gcc_64/include/QtCore/qnativeinterface.h \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../Qt/6.4.2/gcc_64/include/QtCore/QDebug \
+		../../Qt/6.4.2/gcc_64/include/QtCore/QString \
+		../../Qt/6.4.2/gcc_64/include/QtSql/QSqlDatabase \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qsqldatabase.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsqlglobal.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsql-config.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsqlexports.h \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/QApplication \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/qapplication.h \
 		../../Qt/6.4.2/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1451,6 +1466,13 @@ mainwindow.o: ../bank/mainwindow.cpp ../bank/mainwindow.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/QTransform \
 		../../Qt/6.4.2/gcc_64/include/QtCore/qnativeinterface.h \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../Qt/6.4.2/gcc_64/include/QtCore/QDebug \
+		../../Qt/6.4.2/gcc_64/include/QtCore/QString \
+		../../Qt/6.4.2/gcc_64/include/QtSql/QSqlDatabase \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qsqldatabase.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsqlglobal.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsql-config.h \
+		../../Qt/6.4.2/gcc_64/include/QtSql/qtsqlexports.h \
 		ui_mainwindow.h \
 		../../Qt/6.4.2/gcc_64/include/QtCore/QVariant \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/QApplication \
@@ -1476,9 +1498,39 @@ mainwindow.o: ../bank/mainwindow.cpp ../bank/mainwindow.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/qinputmethod.h \
 		../../Qt/6.4.2/gcc_64/include/QtCore/qlocale.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/qguiapplication_platform.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QComboBox \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qcombobox.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../Qt/6.4.2/gcc_64/include/QtGui/qvalidator.h \
+		../../Qt/6.4.2/gcc_64/include/QtCore/qregularexpression.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qslider.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qstyle.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qtabbar.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qrubberband.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qframe.h \
+		../../Qt/6.4.2/gcc_64/include/QtCore/qabstractitemmodel.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QFormLayout \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qformlayout.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QLayout \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qlayout.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qgridlayout.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QFrame \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QGridLayout \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QGroupBox \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qgroupbox.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QHBoxLayout \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QHeaderView \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qheaderview.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../Qt/6.4.2/gcc_64/include/QtCore/qitemselectionmodel.h \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/QLabel \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/qlabel.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/qframe.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/qpicture.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/qtextdocument.h \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/QLineEdit \
@@ -1487,21 +1539,18 @@ mainwindow.o: ../bank/mainwindow.cpp ../bank/mainwindow.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/qtextformat.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/qpen.h \
 		../../Qt/6.4.2/gcc_64/include/QtGui/qtextoption.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/QMenuBar \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/qmenubar.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/qmenu.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/QPlainTextEdit \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/qplaintextedit.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/qtextedit.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../Qt/6.4.2/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		../../Qt/6.4.2/gcc_64/include/QtGui/qtextlayout.h \
-		../../Qt/6.4.2/gcc_64/include/QtGui/qglyphrun.h \
-		../../Qt/6.4.2/gcc_64/include/QtGui/qrawfont.h \
-		../../Qt/6.4.2/gcc_64/include/QtGui/qfontdatabase.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/QStatusBar \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/qstatusbar.h \
-		../../Qt/6.4.2/gcc_64/include/QtWidgets/QTextEdit \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QPushButton \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QRadioButton \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qradiobutton.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QSpacerItem \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QStackedWidget \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qstackedwidget.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QTableWidget \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qtablewidget.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/qtableview.h \
+		../../Qt/6.4.2/gcc_64/include/QtWidgets/QVBoxLayout \
 		../../Qt/6.4.2/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../bank/mainwindow.cpp
 

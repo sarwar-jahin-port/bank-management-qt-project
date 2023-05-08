@@ -428,46 +428,49 @@ public:
     QWidget *layoutWidget_5;
     QHBoxLayout *horizontalLayout_46;
     QLabel *label_9;
-    QLineEdit *lineEdit_6;
+    QLineEdit *signup_birth_date;
+    QLabel *label_39;
+    QLineEdit *signup_password;
     QWidget *layoutWidget11;
     QHBoxLayout *horizontalLayout_40;
     QLabel *label;
-    QComboBox *comboBox;
+    QComboBox *signup_account_type;
     QSpacerItem *horizontalSpacer_5;
     QLabel *label_2;
-    QComboBox *comboBox_2;
+    QComboBox *signup_branch;
     QWidget *layoutWidget12;
     QHBoxLayout *horizontalLayout_41;
     QLabel *label_5;
     QComboBox *comboBox_3;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
+    QLineEdit *signup_first_name;
+    QLineEdit *signup_last_name;
     QWidget *layoutWidget13;
     QHBoxLayout *horizontalLayout_44;
     QHBoxLayout *horizontalLayout_42;
     QLabel *label_6;
-    QLineEdit *lineEdit_3;
+    QLineEdit *signup_phone;
     QHBoxLayout *horizontalLayout_43;
     QLabel *label_7;
-    QLineEdit *lineEdit_4;
+    QLineEdit *signup_email;
     QWidget *layoutWidget14;
     QHBoxLayout *horizontalLayout_45;
     QLabel *label_8;
-    QLineEdit *lineEdit_5;
+    QLineEdit *signup_address;
     QWidget *layoutWidget15;
     QHBoxLayout *horizontalLayout_47;
     QLabel *label_10;
-    QLineEdit *lineEdit_7;
+    QLineEdit *signup_city;
     QLabel *label_11;
-    QLineEdit *lineEdit_9;
+    QLineEdit *signup_postal_code;
     QLabel *label_12;
-    QLineEdit *lineEdit_8;
+    QLineEdit *signup_country;
     QWidget *layoutWidget16;
     QHBoxLayout *horizontalLayout_48;
     QLabel *label_13;
-    QComboBox *comboBox_4;
+    QComboBox *signup_education;
     QLabel *label_14;
-    QComboBox *comboBox_5;
+    QComboBox *signup_identification;
+    QPushButton *signup_submit_form;
     QWidget *layoutWidget_17;
     QGridLayout *gridLayout_27;
     QLabel *login_bank_logo_11;
@@ -2550,7 +2553,7 @@ public:
         label_4->setGeometry(QRect(20, 80, 151, 17));
         layoutWidget_5 = new QWidget(groupBox);
         layoutWidget_5->setObjectName("layoutWidget_5");
-        layoutWidget_5->setGeometry(QRect(20, 180, 316, 27));
+        layoutWidget_5->setGeometry(QRect(20, 180, 641, 27));
         horizontalLayout_46 = new QHBoxLayout(layoutWidget_5);
         horizontalLayout_46->setObjectName("horizontalLayout_46");
         horizontalLayout_46->setContentsMargins(0, 0, 0, 0);
@@ -2559,10 +2562,20 @@ public:
 
         horizontalLayout_46->addWidget(label_9);
 
-        lineEdit_6 = new QLineEdit(layoutWidget_5);
-        lineEdit_6->setObjectName("lineEdit_6");
+        signup_birth_date = new QLineEdit(layoutWidget_5);
+        signup_birth_date->setObjectName("signup_birth_date");
 
-        horizontalLayout_46->addWidget(lineEdit_6);
+        horizontalLayout_46->addWidget(signup_birth_date);
+
+        label_39 = new QLabel(layoutWidget_5);
+        label_39->setObjectName("label_39");
+
+        horizontalLayout_46->addWidget(label_39);
+
+        signup_password = new QLineEdit(layoutWidget_5);
+        signup_password->setObjectName("signup_password");
+
+        horizontalLayout_46->addWidget(signup_password);
 
         layoutWidget11 = new QWidget(groupBox);
         layoutWidget11->setObjectName("layoutWidget11");
@@ -2580,17 +2593,17 @@ public:
 
         horizontalLayout_40->addWidget(label);
 
-        comboBox = new QComboBox(layoutWidget11);
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->setObjectName("comboBox");
+        signup_account_type = new QComboBox(layoutWidget11);
+        signup_account_type->addItem(QString());
+        signup_account_type->addItem(QString());
+        signup_account_type->setObjectName("signup_account_type");
         QSizePolicy sizePolicy5(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
         sizePolicy5.setHorizontalStretch(0);
         sizePolicy5.setVerticalStretch(0);
-        sizePolicy5.setHeightForWidth(comboBox->sizePolicy().hasHeightForWidth());
-        comboBox->setSizePolicy(sizePolicy5);
+        sizePolicy5.setHeightForWidth(signup_account_type->sizePolicy().hasHeightForWidth());
+        signup_account_type->setSizePolicy(sizePolicy5);
 
-        horizontalLayout_40->addWidget(comboBox);
+        horizontalLayout_40->addWidget(signup_account_type);
 
         horizontalSpacer_5 = new QSpacerItem(60, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
@@ -2603,17 +2616,17 @@ public:
 
         horizontalLayout_40->addWidget(label_2);
 
-        comboBox_2 = new QComboBox(layoutWidget11);
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->setObjectName("comboBox_2");
+        signup_branch = new QComboBox(layoutWidget11);
+        signup_branch->addItem(QString());
+        signup_branch->addItem(QString());
+        signup_branch->setObjectName("signup_branch");
         QSizePolicy sizePolicy6(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
         sizePolicy6.setHorizontalStretch(0);
         sizePolicy6.setVerticalStretch(0);
-        sizePolicy6.setHeightForWidth(comboBox_2->sizePolicy().hasHeightForWidth());
-        comboBox_2->setSizePolicy(sizePolicy6);
+        sizePolicy6.setHeightForWidth(signup_branch->sizePolicy().hasHeightForWidth());
+        signup_branch->setSizePolicy(sizePolicy6);
 
-        horizontalLayout_40->addWidget(comboBox_2);
+        horizontalLayout_40->addWidget(signup_branch);
 
         layoutWidget12 = new QWidget(groupBox);
         layoutWidget12->setObjectName("layoutWidget12");
@@ -2641,15 +2654,15 @@ public:
 
         horizontalLayout_41->addWidget(comboBox_3);
 
-        lineEdit = new QLineEdit(layoutWidget12);
-        lineEdit->setObjectName("lineEdit");
+        signup_first_name = new QLineEdit(layoutWidget12);
+        signup_first_name->setObjectName("signup_first_name");
 
-        horizontalLayout_41->addWidget(lineEdit);
+        horizontalLayout_41->addWidget(signup_first_name);
 
-        lineEdit_2 = new QLineEdit(layoutWidget12);
-        lineEdit_2->setObjectName("lineEdit_2");
+        signup_last_name = new QLineEdit(layoutWidget12);
+        signup_last_name->setObjectName("signup_last_name");
 
-        horizontalLayout_41->addWidget(lineEdit_2);
+        horizontalLayout_41->addWidget(signup_last_name);
 
         layoutWidget13 = new QWidget(groupBox);
         layoutWidget13->setObjectName("layoutWidget13");
@@ -2664,10 +2677,10 @@ public:
 
         horizontalLayout_42->addWidget(label_6);
 
-        lineEdit_3 = new QLineEdit(layoutWidget13);
-        lineEdit_3->setObjectName("lineEdit_3");
+        signup_phone = new QLineEdit(layoutWidget13);
+        signup_phone->setObjectName("signup_phone");
 
-        horizontalLayout_42->addWidget(lineEdit_3);
+        horizontalLayout_42->addWidget(signup_phone);
 
 
         horizontalLayout_44->addLayout(horizontalLayout_42);
@@ -2679,10 +2692,10 @@ public:
 
         horizontalLayout_43->addWidget(label_7);
 
-        lineEdit_4 = new QLineEdit(layoutWidget13);
-        lineEdit_4->setObjectName("lineEdit_4");
+        signup_email = new QLineEdit(layoutWidget13);
+        signup_email->setObjectName("signup_email");
 
-        horizontalLayout_43->addWidget(lineEdit_4);
+        horizontalLayout_43->addWidget(signup_email);
 
 
         horizontalLayout_44->addLayout(horizontalLayout_43);
@@ -2698,10 +2711,10 @@ public:
 
         horizontalLayout_45->addWidget(label_8);
 
-        lineEdit_5 = new QLineEdit(layoutWidget14);
-        lineEdit_5->setObjectName("lineEdit_5");
+        signup_address = new QLineEdit(layoutWidget14);
+        signup_address->setObjectName("signup_address");
 
-        horizontalLayout_45->addWidget(lineEdit_5);
+        horizontalLayout_45->addWidget(signup_address);
 
         layoutWidget15 = new QWidget(groupBox);
         layoutWidget15->setObjectName("layoutWidget15");
@@ -2714,30 +2727,30 @@ public:
 
         horizontalLayout_47->addWidget(label_10);
 
-        lineEdit_7 = new QLineEdit(layoutWidget15);
-        lineEdit_7->setObjectName("lineEdit_7");
+        signup_city = new QLineEdit(layoutWidget15);
+        signup_city->setObjectName("signup_city");
 
-        horizontalLayout_47->addWidget(lineEdit_7);
+        horizontalLayout_47->addWidget(signup_city);
 
         label_11 = new QLabel(layoutWidget15);
         label_11->setObjectName("label_11");
 
         horizontalLayout_47->addWidget(label_11);
 
-        lineEdit_9 = new QLineEdit(layoutWidget15);
-        lineEdit_9->setObjectName("lineEdit_9");
+        signup_postal_code = new QLineEdit(layoutWidget15);
+        signup_postal_code->setObjectName("signup_postal_code");
 
-        horizontalLayout_47->addWidget(lineEdit_9);
+        horizontalLayout_47->addWidget(signup_postal_code);
 
         label_12 = new QLabel(layoutWidget15);
         label_12->setObjectName("label_12");
 
         horizontalLayout_47->addWidget(label_12);
 
-        lineEdit_8 = new QLineEdit(layoutWidget15);
-        lineEdit_8->setObjectName("lineEdit_8");
+        signup_country = new QLineEdit(layoutWidget15);
+        signup_country->setObjectName("signup_country");
 
-        horizontalLayout_47->addWidget(lineEdit_8);
+        horizontalLayout_47->addWidget(signup_country);
 
         layoutWidget16 = new QWidget(groupBox);
         layoutWidget16->setObjectName("layoutWidget16");
@@ -2752,14 +2765,14 @@ public:
 
         horizontalLayout_48->addWidget(label_13);
 
-        comboBox_4 = new QComboBox(layoutWidget16);
-        comboBox_4->addItem(QString());
-        comboBox_4->addItem(QString());
-        comboBox_4->addItem(QString());
-        comboBox_4->addItem(QString());
-        comboBox_4->setObjectName("comboBox_4");
+        signup_education = new QComboBox(layoutWidget16);
+        signup_education->addItem(QString());
+        signup_education->addItem(QString());
+        signup_education->addItem(QString());
+        signup_education->addItem(QString());
+        signup_education->setObjectName("signup_education");
 
-        horizontalLayout_48->addWidget(comboBox_4);
+        horizontalLayout_48->addWidget(signup_education);
 
         label_14 = new QLabel(layoutWidget16);
         label_14->setObjectName("label_14");
@@ -2768,15 +2781,18 @@ public:
 
         horizontalLayout_48->addWidget(label_14);
 
-        comboBox_5 = new QComboBox(layoutWidget16);
-        comboBox_5->addItem(QString());
-        comboBox_5->addItem(QString());
-        comboBox_5->addItem(QString());
-        comboBox_5->addItem(QString());
-        comboBox_5->setObjectName("comboBox_5");
+        signup_identification = new QComboBox(layoutWidget16);
+        signup_identification->addItem(QString());
+        signup_identification->addItem(QString());
+        signup_identification->addItem(QString());
+        signup_identification->addItem(QString());
+        signup_identification->setObjectName("signup_identification");
 
-        horizontalLayout_48->addWidget(comboBox_5);
+        horizontalLayout_48->addWidget(signup_identification);
 
+        signup_submit_form = new QPushButton(groupBox);
+        signup_submit_form->setObjectName("signup_submit_form");
+        signup_submit_form->setGeometry(QRect(290, 404, 91, 31));
         layoutWidget_17 = new QWidget(sign_up_page);
         layoutWidget_17->setObjectName("layoutWidget_17");
         layoutWidget_17->setGeometry(QRect(40, 0, 711, 54));
@@ -3036,7 +3052,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(8);
+        stackedWidget->setCurrentIndex(9);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -3368,46 +3384,49 @@ public:
         label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#3584e4;\">Account Information</span></p></body></html>", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#3584e4;\">Personal Information</span></p></body></html>", nullptr));
         label_9->setText(QCoreApplication::translate("MainWindow", "Date of Birth", nullptr));
-        lineEdit_6->setPlaceholderText(QCoreApplication::translate("MainWindow", "dd/mm//yyyy", nullptr));
+        signup_birth_date->setPlaceholderText(QCoreApplication::translate("MainWindow", "dd/mm//yyyy", nullptr));
+        label_39->setText(QCoreApplication::translate("MainWindow", "password", nullptr));
+        signup_password->setPlaceholderText(QCoreApplication::translate("MainWindow", "set your password", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Account Type", nullptr));
-        comboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Savings", nullptr));
-        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "Current", nullptr));
+        signup_account_type->setItemText(0, QCoreApplication::translate("MainWindow", "Savings", nullptr));
+        signup_account_type->setItemText(1, QCoreApplication::translate("MainWindow", "Current", nullptr));
 
         label_2->setText(QCoreApplication::translate("MainWindow", "Branch", nullptr));
-        comboBox_2->setItemText(0, QCoreApplication::translate("MainWindow", "IIUC", nullptr));
-        comboBox_2->setItemText(1, QCoreApplication::translate("MainWindow", "BOD", nullptr));
+        signup_branch->setItemText(0, QCoreApplication::translate("MainWindow", "IIUC", nullptr));
+        signup_branch->setItemText(1, QCoreApplication::translate("MainWindow", "BOD", nullptr));
 
         label_5->setText(QCoreApplication::translate("MainWindow", "Name", nullptr));
         comboBox_3->setItemText(0, QCoreApplication::translate("MainWindow", "Mr.", nullptr));
         comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "Mrs.", nullptr));
         comboBox_3->setItemText(2, QCoreApplication::translate("MainWindow", "Ms.", nullptr));
 
-        lineEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "first name", nullptr));
-        lineEdit_2->setPlaceholderText(QCoreApplication::translate("MainWindow", "last name", nullptr));
+        signup_first_name->setPlaceholderText(QCoreApplication::translate("MainWindow", "first name", nullptr));
+        signup_last_name->setPlaceholderText(QCoreApplication::translate("MainWindow", "last name", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Phone Number", nullptr));
-        lineEdit_3->setPlaceholderText(QCoreApplication::translate("MainWindow", "+880", nullptr));
+        signup_phone->setPlaceholderText(QCoreApplication::translate("MainWindow", "+880", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "Email", nullptr));
-        lineEdit_4->setPlaceholderText(QCoreApplication::translate("MainWindow", "sample@gmail.com", nullptr));
+        signup_email->setPlaceholderText(QCoreApplication::translate("MainWindow", "sample@gmail.com", nullptr));
         label_8->setText(QCoreApplication::translate("MainWindow", "Residential Address", nullptr));
-        lineEdit_5->setPlaceholderText(QString());
+        signup_address->setPlaceholderText(QString());
         label_10->setText(QCoreApplication::translate("MainWindow", "City", nullptr));
-        lineEdit_7->setPlaceholderText(QString());
+        signup_city->setPlaceholderText(QString());
         label_11->setText(QCoreApplication::translate("MainWindow", "Postal Code", nullptr));
-        lineEdit_9->setPlaceholderText(QString());
+        signup_postal_code->setPlaceholderText(QString());
         label_12->setText(QCoreApplication::translate("MainWindow", "Country", nullptr));
-        lineEdit_8->setPlaceholderText(QString());
+        signup_country->setPlaceholderText(QString());
         label_13->setText(QCoreApplication::translate("MainWindow", "Education Level", nullptr));
-        comboBox_4->setItemText(0, QCoreApplication::translate("MainWindow", "High School or below", nullptr));
-        comboBox_4->setItemText(1, QCoreApplication::translate("MainWindow", "Undergraduate", nullptr));
-        comboBox_4->setItemText(2, QCoreApplication::translate("MainWindow", "Masters Degree", nullptr));
-        comboBox_4->setItemText(3, QCoreApplication::translate("MainWindow", "PhD", nullptr));
+        signup_education->setItemText(0, QCoreApplication::translate("MainWindow", "High School or below", nullptr));
+        signup_education->setItemText(1, QCoreApplication::translate("MainWindow", "Undergraduate", nullptr));
+        signup_education->setItemText(2, QCoreApplication::translate("MainWindow", "Masters Degree", nullptr));
+        signup_education->setItemText(3, QCoreApplication::translate("MainWindow", "PhD", nullptr));
 
         label_14->setText(QCoreApplication::translate("MainWindow", "Form of Identification", nullptr));
-        comboBox_5->setItemText(0, QCoreApplication::translate("MainWindow", "National Identity Card", nullptr));
-        comboBox_5->setItemText(1, QCoreApplication::translate("MainWindow", "Internation Passport", nullptr));
-        comboBox_5->setItemText(2, QCoreApplication::translate("MainWindow", "Driving License", nullptr));
-        comboBox_5->setItemText(3, QCoreApplication::translate("MainWindow", "Student ID", nullptr));
+        signup_identification->setItemText(0, QCoreApplication::translate("MainWindow", "National Identity Card", nullptr));
+        signup_identification->setItemText(1, QCoreApplication::translate("MainWindow", "Internation Passport", nullptr));
+        signup_identification->setItemText(2, QCoreApplication::translate("MainWindow", "Driving License", nullptr));
+        signup_identification->setItemText(3, QCoreApplication::translate("MainWindow", "Student ID", nullptr));
 
+        signup_submit_form->setText(QCoreApplication::translate("MainWindow", "Submit Form", nullptr));
         login_bank_logo_11->setText(QString());
         login_address_label1_11->setText(QCoreApplication::translate("MainWindow", "Plot - CWS- (A)-1, Road No - 34 ", nullptr));
         login_address_label2_11->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));

@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QDebug>
 #include <QString>
+#include <QSqlDatabase>
+#include <QSqlQuery>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -153,8 +155,11 @@ private slots:
 
     void on_activity_button_10_clicked();
 
+    void on_signup_submit_form_clicked();
+
 private:
     Ui::MainWindow *ui;
-    QString login_email, login_password;
+    QString login_email, login_password, signup_account_type, signup_branch, signup_first_name, signup_last_name, signup_phone, signup_email, signup_password, signup_birth_date, signup_address, signup_city, signup_postal_code, signup_country, signup_education;
+    QSqlDatabase db;
 };
 #endif // MAINWINDOW_H

@@ -6,10 +6,15 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->stackedWidget->setCurrentIndex(0);
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("/home/teck-sink/project/bank/db/db");
+    db.open();
 }
 
 MainWindow::~MainWindow()
 {
+    db.close();
     delete ui;
 }
 
@@ -23,7 +28,10 @@ void MainWindow::on_login_sign_in_button_clicked()
     login_email = ui->login_username_or_email_input->text();
     login_password = ui->login_password_input->text();
 //    qDebug() << login_email << login_password;
-    if(login_email == "admin" && login_password == "admin"){
+    QSqlQuery query;
+    query.exec(" SELECT * FROM user WHERE email = '"+login_email+"' AND password = '"+login_password+"'");
+//    qDebug() << query.next();
+    if(query.next()){
         ui->stackedWidget->setCurrentIndex(1);
     }
 }
@@ -408,5 +416,27 @@ void MainWindow::on_profile_button_10_clicked()
 void MainWindow::on_activity_button_10_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
+}
+
+// This function is responsive for submit form data into the database.
+void MainWindow::on_signup_submit_form_clicked()
+{
+    qDebug() << "submit form clicked";
+    signup_account_type = ui->signup_account_type->currentText();
+    signup_branch = ui->signup_branch->currentText();
+    signup_first_name = ui->signup_first_name->text();
+    signup_last_name = ui->signup_last_name->text();
+    signup_phone = ui->signup_phone->text();
+    signup_email = ui->signup_email->text();
+    signup_password = ui->signup_password->text();
+    signup_birth_date = ui->signup_birth_date->text();
+    signup_address = ui->signup_address->text();
+    signup_city = ui->signup_city->text();
+    signup_postal_code = ui->signup_postal_code->text();
+    signup_country = ui->signup_country->text();
+    signup_education = ui->signup_education->currentText();
+    qDebug() << signup_account_type << signup_branch << signup_first_name << signup_last_name << signup_phone << signup_email << signup_password << signup_birth_date << signup_address << signup_city << signup_postal_code << signup_country << signup_education;
+    QSqlQuery query;
+    query.exec("INSERT INTO user (first_name, last_name, phone, email, password, date_of_birth, education, city, postal_code, country, address, account_type, branch) VALUES ('"+signup_first_name+"', '"+signup_last_name+"', '"+signup_phone+"', '"+signup_email+"', '"+signup_password+"', '"+signup_birth_date+"', '"+signup_education+"', '"+signup_city+"', '"+signup_postal_code+"', '"+signup_country+"', '"+signup_address+"', '"+signup_account_type+"', '"+signup_branch+"')");
 }
 
