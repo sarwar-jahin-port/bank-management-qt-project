@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>9</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="login_page">
      <widget class="QLabel" name="login_password_input_label">
@@ -447,7 +447,7 @@ border: 'none'</string>
         <string>140000000000000000</string>
        </property>
       </widget>
-      <widget class="QLabel" name="home_ledeger">
+      <widget class="QLabel" name="home_ledger">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -719,239 +719,24 @@ border: 'none'</string>
      <widget class="QGroupBox" name="groupBox_8">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>9</x>
         <y>100</y>
-        <width>800</width>
+        <width>791</width>
         <height>500</height>
        </rect>
       </property>
       <property name="title">
        <string>Activity Log</string>
       </property>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QTableView" name="tableView">
        <property name="geometry">
         <rect>
-         <x>340</x>
-         <y>120</y>
-         <width>89</width>
-         <height>25</height>
+         <x>140</x>
+         <y>30</y>
+         <width>511</width>
+         <height>441</height>
         </rect>
        </property>
-       <property name="text">
-        <string>Search</string>
-       </property>
-      </widget>
-      <widget class="QTableWidget" name="tableWidget">
-       <property name="geometry">
-        <rect>
-         <x>170</x>
-         <y>160</y>
-         <width>421</width>
-         <height>311</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="showGrid">
-        <bool>true</bool>
-       </property>
-       <property name="gridStyle">
-        <enum>Qt::SolidLine</enum>
-       </property>
-       <property name="sortingEnabled">
-        <bool>false</bool>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-       <attribute name="horizontalHeaderCascadingSectionResizes">
-        <bool>false</bool>
-       </attribute>
-       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
-        <bool>false</bool>
-       </attribute>
-       <attribute name="horizontalHeaderStretchLastSection">
-        <bool>true</bool>
-       </attribute>
-       <row>
-        <property name="text">
-         <string>1</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>2</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>3</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>4</string>
-        </property>
-       </row>
-       <column>
-        <property name="text">
-         <string>Status</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Date</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Amount</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Time</string>
-        </property>
-       </column>
-       <item row="0" column="0">
-        <property name="text">
-         <string>DR</string>
-        </property>
-       </item>
-       <item row="0" column="1">
-        <property name="text">
-         <string>24/04/2023</string>
-        </property>
-       </item>
-       <item row="0" column="2">
-        <property name="text">
-         <string>1000.00</string>
-        </property>
-       </item>
-       <item row="0" column="3">
-        <property name="text">
-         <string>12:10pm</string>
-        </property>
-       </item>
-      </widget>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>61</x>
-         <y>51</y>
-         <width>671</width>
-         <height>62</height>
-        </rect>
-       </property>
-       <layout class="QGridLayout" name="gridLayout_17">
-        <item row="0" column="1">
-         <layout class="QGridLayout" name="gridLayout_14">
-          <item row="0" column="1">
-           <widget class="QComboBox" name="comboBox_15">
-            <item>
-             <property name="text">
-              <string>All</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Account Statement</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_25">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Activity Type:</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item row="0" column="0">
-         <layout class="QGridLayout" name="gridLayout_13">
-          <item row="0" column="1">
-           <widget class="QComboBox" name="comboBox_14">
-            <item>
-             <property name="text">
-              <string>All</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Success</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Failed</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_24">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>Status Type: </string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item row="1" column="0">
-         <layout class="QGridLayout" name="gridLayout_15">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_26">
-            <property name="text">
-             <string>From Date:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEdit_18">
-            <property name="placeholderText">
-             <string>dd/mm/yyyy</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item row="1" column="1">
-         <layout class="QGridLayout" name="gridLayout_16">
-          <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEdit_19">
-            <property name="placeholderText">
-             <string>dd/mm/yyyy</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_27">
-            <property name="text">
-             <string>To Date:</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
       </widget>
      </widget>
      <widget class="QWidget" name="layoutWidget_9">
@@ -3106,36 +2891,45 @@ border: 'none'</string>
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>30</y>
-          <width>291</width>
-          <height>143</height>
+          <x>11</x>
+          <y>31</y>
+          <width>311</width>
+          <height>141</height>
          </rect>
         </property>
-        <layout class="QFormLayout" name="ft_from_layout">
-         <property name="verticalSpacing">
-          <number>19</number>
-         </property>
-         <item row="0" column="0" colspan="2">
-          <widget class="QComboBox" name="ft_from_account_type">
-           <item>
-            <property name="text">
-             <string>-Select Account</string>
-            </property>
-           </item>
+        <layout class="QGridLayout" name="gridLayout_29">
+         <item row="0" column="0">
+          <widget class="QLabel" name="ft_from_account_no_label">
+           <property name="text">
+            <string>Account No.</string>
+           </property>
           </widget>
          </item>
-         <item row="1" column="0" colspan="2">
+         <item row="0" column="1">
+          <widget class="QLabel" name="ft_from_account_no">
+           <property name="text">
+            <string>12345678910111213</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
           <widget class="QLabel" name="ft_from_balance">
            <property name="text">
             <string>available balance</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="0" colspan="2">
+         <item row="2" column="0">
           <widget class="QLabel" name="ft_from_currency">
            <property name="text">
             <string>Currency</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="ft_from_currency_2">
+           <property name="text">
+            <string>BDT</string>
            </property>
           </widget>
          </item>
@@ -3143,6 +2937,13 @@ border: 'none'</string>
           <widget class="QLineEdit" name="ft_from_transfer_amount">
            <property name="placeholderText">
             <string>Tranfer Amount</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="ft_from_available_balance">
+           <property name="text">
+            <string>0000000</string>
            </property>
           </widget>
          </item>
@@ -3210,13 +3011,6 @@ border: 'none'</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="0" colspan="2">
-          <widget class="QLineEdit" name="ft_to_currency">
-           <property name="placeholderText">
-            <string>Currency</string>
-           </property>
-          </widget>
-         </item>
          <item row="4" column="0" colspan="2">
           <widget class="QLineEdit" name="ft_to_narration">
            <property name="placeholderText">
@@ -3235,6 +3029,20 @@ border: 'none'</string>
           <widget class="QRadioButton" name="ft_to_schedule_button">
            <property name="text">
             <string>Schedule</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="ft_to_currency_label">
+           <property name="text">
+            <string>Currency : </string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="ft_to_currency">
+           <property name="text">
+            <string>BDT</string>
            </property>
           </widget>
          </item>

@@ -6,6 +6,9 @@
 #include <QString>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QSqlQueryModel>
+#include <QDate>
+#include <QTime>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -157,9 +160,22 @@ private slots:
 
     void on_signup_submit_form_clicked();
 
+    void getData();
+
+    void getLastElement();
+
+    void dashboard_dataLoad();
+
+    void fund_transfer_dataLoad();
+
+    void on_ft_send_button_clicked();
+
 private:
     Ui::MainWindow *ui;
-    QString login_email, login_password, signup_account_type, signup_branch, signup_first_name, signup_last_name, signup_phone, signup_email, signup_password, signup_birth_date, signup_address, signup_city, signup_postal_code, signup_country, signup_education;
+    QString current_user, c_balance, c_account_no, l_account_no, c_date, c_time;
+    QString ft_to_account, ft_to_account_holder, ft_to_narration, transfer_amount_text;
+    QString account_no, login_email, login_password, signup_account_type, signup_branch, signup_first_name, signup_last_name, signup_phone, signup_email, signup_password, signup_birth_date, signup_address, signup_city, signup_postal_code, signup_country, signup_education, balance;
+    qint32 c_balance_int, l_account_no_int, transfer_amount;
     QSqlDatabase db;
 };
 #endif // MAINWINDOW_H

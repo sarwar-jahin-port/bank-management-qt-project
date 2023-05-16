@@ -25,7 +25,7 @@
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
-#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -74,7 +74,7 @@ public:
     QLabel *home_available_balance;
     QLabel *home_currency_label;
     QLabel *home_savings;
-    QLabel *home_ledeger;
+    QLabel *home_ledger;
     QLabel *home_ledger_balance;
     QLabel *home_currency_label_2;
     QLabel *home_mini_statement_label;
@@ -99,22 +99,7 @@ public:
     QSpacerItem *horizontalSpacer_23;
     QWidget *activity_page;
     QGroupBox *groupBox_8;
-    QPushButton *pushButton_6;
-    QTableWidget *tableWidget;
-    QWidget *layoutWidget2;
-    QGridLayout *gridLayout_17;
-    QGridLayout *gridLayout_14;
-    QComboBox *comboBox_15;
-    QLabel *label_25;
-    QGridLayout *gridLayout_13;
-    QComboBox *comboBox_14;
-    QLabel *label_24;
-    QGridLayout *gridLayout_15;
-    QLabel *label_26;
-    QLineEdit *lineEdit_18;
-    QGridLayout *gridLayout_16;
-    QLineEdit *lineEdit_19;
-    QLabel *label_27;
+    QTableView *tableView;
     QWidget *layoutWidget_9;
     QGridLayout *gridLayout_19;
     QLabel *login_bank_logo_7;
@@ -139,7 +124,7 @@ public:
     QPushButton *activity_button_2;
     QWidget *Services_page;
     QGroupBox *groupBox_7;
-    QWidget *layoutWidget3;
+    QWidget *layoutWidget2;
     QGridLayout *gridLayout_12;
     QLabel *label_22;
     QSpacerItem *horizontalSpacer_4;
@@ -171,7 +156,7 @@ public:
     QPushButton *activity_button_4;
     QWidget *beneficiary_page;
     QGroupBox *groupBox_6;
-    QWidget *layoutWidget4;
+    QWidget *layoutWidget3;
     QGridLayout *gridLayout_11;
     QLineEdit *lineEdit_16;
     QComboBox *comboBox_11;
@@ -208,7 +193,7 @@ public:
     QWidget *bill_pay_page;
     QGroupBox *groupBox_2;
     QGroupBox *groupBox_3;
-    QWidget *layoutWidget5;
+    QWidget *layoutWidget4;
     QGridLayout *gridLayout_7;
     QComboBox *comboBox_6;
     QLabel *label_15;
@@ -259,7 +244,7 @@ public:
     QWidget *cards_page;
     QGroupBox *cards_page_box;
     QGroupBox *cards_available_box;
-    QWidget *layoutWidget6;
+    QWidget *layoutWidget5;
     QGridLayout *cards_available_layout;
     QHBoxLayout *horizontalLayout_6;
     QLabel *cards_visa_label;
@@ -282,7 +267,7 @@ public:
     QLabel *cards_credit_validity_label;
     QLabel *cards_credit_validity;
     QGroupBox *cards_credit_box;
-    QWidget *layoutWidget7;
+    QWidget *layoutWidget6;
     QGridLayout *cards_credit_layout;
     QHBoxLayout *horizontalLayout_14;
     QLabel *cards_american_bill_label;
@@ -335,23 +320,27 @@ public:
     QPushButton *home_statement_button_2;
     QGroupBox *ft_box;
     QGroupBox *ft_from_box;
-    QWidget *layoutWidget8;
-    QFormLayout *ft_from_layout;
-    QComboBox *ft_from_account_type;
+    QWidget *layoutWidget7;
+    QGridLayout *gridLayout_29;
+    QLabel *ft_from_account_no_label;
+    QLabel *ft_from_account_no;
     QLabel *ft_from_balance;
     QLabel *ft_from_currency;
+    QLabel *ft_from_currency_2;
     QLineEdit *ft_from_transfer_amount;
+    QLabel *ft_from_available_balance;
     QGroupBox *ft_to_box;
     QLabel *ft_to_notice_label;
-    QWidget *layoutWidget9;
+    QWidget *layoutWidget8;
     QFormLayout *ft_to_layout;
     QComboBox *ft_to_select_beneficiary;
     QLineEdit *ft_to_account;
     QLineEdit *ft_to_ac_holder;
-    QLineEdit *ft_to_currency;
     QLineEdit *ft_to_narration;
     QRadioButton *ft_to_pay_now_button;
     QRadioButton *ft_to_schedule_button;
+    QLabel *ft_to_currency_label;
+    QLabel *ft_to_currency;
     QPushButton *ft_send_button;
     QWidget *layoutWidget_14;
     QGridLayout *gridLayout_24;
@@ -378,7 +367,7 @@ public:
     QWidget *profile_page;
     QLabel *profile_customer_details_label;
     QGroupBox *profile_box;
-    QWidget *layoutWidget10;
+    QWidget *layoutWidget9;
     QFormLayout *profile_box_layout;
     QGridLayout *gridLayout;
     QLabel *profile_full_name_label;
@@ -431,20 +420,20 @@ public:
     QLineEdit *signup_birth_date;
     QLabel *label_39;
     QLineEdit *signup_password;
-    QWidget *layoutWidget11;
+    QWidget *layoutWidget10;
     QHBoxLayout *horizontalLayout_40;
     QLabel *label;
     QComboBox *signup_account_type;
     QSpacerItem *horizontalSpacer_5;
     QLabel *label_2;
     QComboBox *signup_branch;
-    QWidget *layoutWidget12;
+    QWidget *layoutWidget11;
     QHBoxLayout *horizontalLayout_41;
     QLabel *label_5;
     QComboBox *comboBox_3;
     QLineEdit *signup_first_name;
     QLineEdit *signup_last_name;
-    QWidget *layoutWidget13;
+    QWidget *layoutWidget12;
     QHBoxLayout *horizontalLayout_44;
     QHBoxLayout *horizontalLayout_42;
     QLabel *label_6;
@@ -452,11 +441,11 @@ public:
     QHBoxLayout *horizontalLayout_43;
     QLabel *label_7;
     QLineEdit *signup_email;
-    QWidget *layoutWidget14;
+    QWidget *layoutWidget13;
     QHBoxLayout *horizontalLayout_45;
     QLabel *label_8;
     QLineEdit *signup_address;
-    QWidget *layoutWidget15;
+    QWidget *layoutWidget14;
     QHBoxLayout *horizontalLayout_47;
     QLabel *label_10;
     QLineEdit *signup_city;
@@ -464,7 +453,7 @@ public:
     QLineEdit *signup_postal_code;
     QLabel *label_12;
     QLineEdit *signup_country;
-    QWidget *layoutWidget16;
+    QWidget *layoutWidget15;
     QHBoxLayout *horizontalLayout_48;
     QLabel *label_13;
     QComboBox *signup_education;
@@ -485,7 +474,7 @@ public:
     QWidget *forget_page;
     QGroupBox *forget_container;
     QLabel *forget_label;
-    QWidget *layoutWidget17;
+    QWidget *layoutWidget16;
     QGridLayout *gridLayout_28;
     QComboBox *forget_select_type;
     QLabel *forget_mobile_code;
@@ -697,9 +686,9 @@ public:
         home_savings = new QLabel(home_box);
         home_savings->setObjectName("home_savings");
         home_savings->setGeometry(QRect(10, 32, 161, 17));
-        home_ledeger = new QLabel(home_box);
-        home_ledeger->setObjectName("home_ledeger");
-        home_ledeger->setGeometry(QRect(10, 82, 81, 17));
+        home_ledger = new QLabel(home_box);
+        home_ledger->setObjectName("home_ledger");
+        home_ledger->setGeometry(QRect(10, 82, 81, 17));
         home_ledger_balance = new QLabel(home_box);
         home_ledger_balance->setObjectName("home_ledger_balance");
         home_ledger_balance->setGeometry(QRect(10, 60, 151, 21));
@@ -798,131 +787,10 @@ public:
         activity_page->setObjectName("activity_page");
         groupBox_8 = new QGroupBox(activity_page);
         groupBox_8->setObjectName("groupBox_8");
-        groupBox_8->setGeometry(QRect(0, 100, 800, 500));
-        pushButton_6 = new QPushButton(groupBox_8);
-        pushButton_6->setObjectName("pushButton_6");
-        pushButton_6->setGeometry(QRect(340, 120, 89, 25));
-        tableWidget = new QTableWidget(groupBox_8);
-        if (tableWidget->columnCount() < 4)
-            tableWidget->setColumnCount(4);
-        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
-        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
-        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
-        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
-        if (tableWidget->rowCount() < 4)
-            tableWidget->setRowCount(4);
-        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem4);
-        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(1, __qtablewidgetitem5);
-        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(2, __qtablewidgetitem6);
-        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(3, __qtablewidgetitem7);
-        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
-        tableWidget->setItem(0, 0, __qtablewidgetitem8);
-        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
-        tableWidget->setItem(0, 1, __qtablewidgetitem9);
-        QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
-        tableWidget->setItem(0, 2, __qtablewidgetitem10);
-        QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
-        tableWidget->setItem(0, 3, __qtablewidgetitem11);
-        tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(170, 160, 421, 311));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(tableWidget->sizePolicy().hasHeightForWidth());
-        tableWidget->setSizePolicy(sizePolicy1);
-        tableWidget->setShowGrid(true);
-        tableWidget->setGridStyle(Qt::SolidLine);
-        tableWidget->setSortingEnabled(false);
-        tableWidget->setWordWrap(true);
-        tableWidget->horizontalHeader()->setCascadingSectionResizes(false);
-        tableWidget->horizontalHeader()->setProperty("showSortIndicator", QVariant(false));
-        tableWidget->horizontalHeader()->setStretchLastSection(true);
-        layoutWidget2 = new QWidget(groupBox_8);
-        layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(61, 51, 671, 62));
-        gridLayout_17 = new QGridLayout(layoutWidget2);
-        gridLayout_17->setObjectName("gridLayout_17");
-        gridLayout_17->setContentsMargins(0, 0, 0, 0);
-        gridLayout_14 = new QGridLayout();
-        gridLayout_14->setObjectName("gridLayout_14");
-        comboBox_15 = new QComboBox(layoutWidget2);
-        comboBox_15->addItem(QString());
-        comboBox_15->addItem(QString());
-        comboBox_15->setObjectName("comboBox_15");
-
-        gridLayout_14->addWidget(comboBox_15, 0, 1, 1, 1);
-
-        label_25 = new QLabel(layoutWidget2);
-        label_25->setObjectName("label_25");
-        QSizePolicy sizePolicy2(QSizePolicy::Maximum, QSizePolicy::Preferred);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(label_25->sizePolicy().hasHeightForWidth());
-        label_25->setSizePolicy(sizePolicy2);
-
-        gridLayout_14->addWidget(label_25, 0, 0, 1, 1);
-
-
-        gridLayout_17->addLayout(gridLayout_14, 0, 1, 1, 1);
-
-        gridLayout_13 = new QGridLayout();
-        gridLayout_13->setObjectName("gridLayout_13");
-        comboBox_14 = new QComboBox(layoutWidget2);
-        comboBox_14->addItem(QString());
-        comboBox_14->addItem(QString());
-        comboBox_14->addItem(QString());
-        comboBox_14->setObjectName("comboBox_14");
-
-        gridLayout_13->addWidget(comboBox_14, 0, 1, 1, 1);
-
-        label_24 = new QLabel(layoutWidget2);
-        label_24->setObjectName("label_24");
-        sizePolicy2.setHeightForWidth(label_24->sizePolicy().hasHeightForWidth());
-        label_24->setSizePolicy(sizePolicy2);
-
-        gridLayout_13->addWidget(label_24, 0, 0, 1, 1);
-
-
-        gridLayout_17->addLayout(gridLayout_13, 0, 0, 1, 1);
-
-        gridLayout_15 = new QGridLayout();
-        gridLayout_15->setObjectName("gridLayout_15");
-        label_26 = new QLabel(layoutWidget2);
-        label_26->setObjectName("label_26");
-
-        gridLayout_15->addWidget(label_26, 0, 0, 1, 1);
-
-        lineEdit_18 = new QLineEdit(layoutWidget2);
-        lineEdit_18->setObjectName("lineEdit_18");
-
-        gridLayout_15->addWidget(lineEdit_18, 0, 1, 1, 1);
-
-
-        gridLayout_17->addLayout(gridLayout_15, 1, 0, 1, 1);
-
-        gridLayout_16 = new QGridLayout();
-        gridLayout_16->setObjectName("gridLayout_16");
-        lineEdit_19 = new QLineEdit(layoutWidget2);
-        lineEdit_19->setObjectName("lineEdit_19");
-
-        gridLayout_16->addWidget(lineEdit_19, 0, 1, 1, 1);
-
-        label_27 = new QLabel(layoutWidget2);
-        label_27->setObjectName("label_27");
-
-        gridLayout_16->addWidget(label_27, 0, 0, 1, 1);
-
-
-        gridLayout_17->addLayout(gridLayout_16, 1, 1, 1, 1);
-
+        groupBox_8->setGeometry(QRect(9, 100, 791, 500));
+        tableView = new QTableView(groupBox_8);
+        tableView->setObjectName("tableView");
+        tableView->setGeometry(QRect(140, 30, 511, 441));
         layoutWidget_9 = new QWidget(activity_page);
         layoutWidget_9->setObjectName("layoutWidget_9");
         layoutWidget_9->setGeometry(QRect(40, 0, 711, 54));
@@ -1053,13 +921,13 @@ public:
         groupBox_7 = new QGroupBox(Services_page);
         groupBox_7->setObjectName("groupBox_7");
         groupBox_7->setGeometry(QRect(50, 150, 700, 300));
-        layoutWidget3 = new QWidget(groupBox_7);
-        layoutWidget3->setObjectName("layoutWidget3");
-        layoutWidget3->setGeometry(QRect(60, 50, 581, 151));
-        gridLayout_12 = new QGridLayout(layoutWidget3);
+        layoutWidget2 = new QWidget(groupBox_7);
+        layoutWidget2->setObjectName("layoutWidget2");
+        layoutWidget2->setGeometry(QRect(60, 50, 581, 151));
+        gridLayout_12 = new QGridLayout(layoutWidget2);
         gridLayout_12->setObjectName("gridLayout_12");
         gridLayout_12->setContentsMargins(0, 0, 0, 0);
-        label_22 = new QLabel(layoutWidget3);
+        label_22 = new QLabel(layoutWidget2);
         label_22->setObjectName("label_22");
         QFont font2;
         font2.setPointSize(15);
@@ -1075,7 +943,7 @@ public:
 
         gridLayout_12->addItem(horizontalSpacer_3, 0, 0, 1, 1);
 
-        comboBox_13 = new QComboBox(layoutWidget3);
+        comboBox_13 = new QComboBox(layoutWidget2);
         comboBox_13->addItem(QString());
         comboBox_13->addItem(QString());
         comboBox_13->addItem(QString());
@@ -1083,14 +951,14 @@ public:
 
         gridLayout_12->addWidget(comboBox_13, 2, 0, 1, 3);
 
-        comboBox_12 = new QComboBox(layoutWidget3);
+        comboBox_12 = new QComboBox(layoutWidget2);
         comboBox_12->addItem(QString());
         comboBox_12->addItem(QString());
         comboBox_12->setObjectName("comboBox_12");
 
         gridLayout_12->addWidget(comboBox_12, 1, 0, 1, 3);
 
-        pushButton_5 = new QPushButton(layoutWidget3);
+        pushButton_5 = new QPushButton(layoutWidget2);
         pushButton_5->setObjectName("pushButton_5");
         pushButton_5->setStyleSheet(QString::fromUtf8("color: rgb(38, 162, 105);"));
 
@@ -1226,19 +1094,19 @@ public:
         groupBox_6 = new QGroupBox(beneficiary_page);
         groupBox_6->setObjectName("groupBox_6");
         groupBox_6->setGeometry(QRect(150, 140, 500, 400));
-        layoutWidget4 = new QWidget(groupBox_6);
-        layoutWidget4->setObjectName("layoutWidget4");
-        layoutWidget4->setGeometry(QRect(80, 70, 321, 270));
-        gridLayout_11 = new QGridLayout(layoutWidget4);
+        layoutWidget3 = new QWidget(groupBox_6);
+        layoutWidget3->setObjectName("layoutWidget3");
+        layoutWidget3->setGeometry(QRect(80, 70, 321, 270));
+        gridLayout_11 = new QGridLayout(layoutWidget3);
         gridLayout_11->setObjectName("gridLayout_11");
         gridLayout_11->setVerticalSpacing(10);
         gridLayout_11->setContentsMargins(0, 0, 0, 0);
-        lineEdit_16 = new QLineEdit(layoutWidget4);
+        lineEdit_16 = new QLineEdit(layoutWidget3);
         lineEdit_16->setObjectName("lineEdit_16");
 
         gridLayout_11->addWidget(lineEdit_16, 6, 0, 1, 3);
 
-        comboBox_11 = new QComboBox(layoutWidget4);
+        comboBox_11 = new QComboBox(layoutWidget3);
         comboBox_11->addItem(QString());
         comboBox_11->addItem(QString());
         comboBox_11->addItem(QString());
@@ -1248,12 +1116,12 @@ public:
 
         gridLayout_11->addWidget(comboBox_11, 4, 0, 1, 3);
 
-        lineEdit_15 = new QLineEdit(layoutWidget4);
+        lineEdit_15 = new QLineEdit(layoutWidget3);
         lineEdit_15->setObjectName("lineEdit_15");
 
         gridLayout_11->addWidget(lineEdit_15, 5, 0, 1, 3);
 
-        comboBox_9 = new QComboBox(layoutWidget4);
+        comboBox_9 = new QComboBox(layoutWidget3);
         comboBox_9->addItem(QString());
         comboBox_9->addItem(QString());
         comboBox_9->setObjectName("comboBox_9");
@@ -1264,13 +1132,13 @@ public:
 
         gridLayout_11->addItem(horizontalSpacer_2, 0, 2, 1, 1);
 
-        label_19 = new QLabel(layoutWidget4);
+        label_19 = new QLabel(layoutWidget3);
         label_19->setObjectName("label_19");
         label_19->setFont(font2);
 
         gridLayout_11->addWidget(label_19, 0, 1, 1, 1);
 
-        lineEdit_17 = new QLineEdit(layoutWidget4);
+        lineEdit_17 = new QLineEdit(layoutWidget3);
         lineEdit_17->setObjectName("lineEdit_17");
 
         gridLayout_11->addWidget(lineEdit_17, 7, 0, 1, 3);
@@ -1279,7 +1147,7 @@ public:
 
         gridLayout_11->addItem(horizontalSpacer, 0, 0, 1, 1);
 
-        comboBox_10 = new QComboBox(layoutWidget4);
+        comboBox_10 = new QComboBox(layoutWidget3);
         comboBox_10->addItem(QString());
         comboBox_10->addItem(QString());
         comboBox_10->addItem(QString());
@@ -1289,7 +1157,7 @@ public:
 
         gridLayout_11->addWidget(comboBox_10, 3, 0, 1, 3);
 
-        pushButton_4 = new QPushButton(layoutWidget4);
+        pushButton_4 = new QPushButton(layoutWidget3);
         pushButton_4->setObjectName("pushButton_4");
         pushButton_4->setStyleSheet(QString::fromUtf8("color: rgb(38, 162, 105);"));
 
@@ -1428,13 +1296,13 @@ public:
         groupBox_3 = new QGroupBox(groupBox_2);
         groupBox_3->setObjectName("groupBox_3");
         groupBox_3->setGeometry(QRect(10, 30, 291, 161));
-        layoutWidget5 = new QWidget(groupBox_3);
-        layoutWidget5->setObjectName("layoutWidget5");
-        layoutWidget5->setGeometry(QRect(10, 30, 271, 121));
-        gridLayout_7 = new QGridLayout(layoutWidget5);
+        layoutWidget4 = new QWidget(groupBox_3);
+        layoutWidget4->setObjectName("layoutWidget4");
+        layoutWidget4->setGeometry(QRect(10, 30, 271, 121));
+        gridLayout_7 = new QGridLayout(layoutWidget4);
         gridLayout_7->setObjectName("gridLayout_7");
         gridLayout_7->setContentsMargins(0, 0, 0, 0);
-        comboBox_6 = new QComboBox(layoutWidget5);
+        comboBox_6 = new QComboBox(layoutWidget4);
         comboBox_6->addItem(QString());
         comboBox_6->addItem(QString());
         comboBox_6->addItem(QString());
@@ -1443,27 +1311,27 @@ public:
 
         gridLayout_7->addWidget(comboBox_6, 0, 0, 1, 2);
 
-        label_15 = new QLabel(layoutWidget5);
+        label_15 = new QLabel(layoutWidget4);
         label_15->setObjectName("label_15");
 
         gridLayout_7->addWidget(label_15, 1, 0, 1, 1);
 
-        label_16 = new QLabel(layoutWidget5);
+        label_16 = new QLabel(layoutWidget4);
         label_16->setObjectName("label_16");
 
         gridLayout_7->addWidget(label_16, 1, 1, 1, 1);
 
-        label_17 = new QLabel(layoutWidget5);
+        label_17 = new QLabel(layoutWidget4);
         label_17->setObjectName("label_17");
 
         gridLayout_7->addWidget(label_17, 2, 0, 1, 1);
 
-        lineEdit_10 = new QLineEdit(layoutWidget5);
+        lineEdit_10 = new QLineEdit(layoutWidget4);
         lineEdit_10->setObjectName("lineEdit_10");
 
         gridLayout_7->addWidget(lineEdit_10, 2, 1, 1, 1);
 
-        pushButton = new QPushButton(layoutWidget5);
+        pushButton = new QPushButton(layoutWidget4);
         pushButton->setObjectName("pushButton");
         pushButton->setStyleSheet(QString::fromUtf8("color: rgb(38, 162, 105);"));
 
@@ -1692,20 +1560,20 @@ public:
         cards_available_box = new QGroupBox(cards_page_box);
         cards_available_box->setObjectName("cards_available_box");
         cards_available_box->setGeometry(QRect(10, 30, 341, 201));
-        layoutWidget6 = new QWidget(cards_available_box);
-        layoutWidget6->setObjectName("layoutWidget6");
-        layoutWidget6->setGeometry(QRect(9, 30, 321, 164));
-        cards_available_layout = new QGridLayout(layoutWidget6);
+        layoutWidget5 = new QWidget(cards_available_box);
+        layoutWidget5->setObjectName("layoutWidget5");
+        layoutWidget5->setGeometry(QRect(9, 30, 321, 164));
+        cards_available_layout = new QGridLayout(layoutWidget5);
         cards_available_layout->setObjectName("cards_available_layout");
         cards_available_layout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName("horizontalLayout_6");
-        cards_visa_label = new QLabel(layoutWidget6);
+        cards_visa_label = new QLabel(layoutWidget5);
         cards_visa_label->setObjectName("cards_visa_label");
 
         horizontalLayout_6->addWidget(cards_visa_label);
 
-        cards_visa_number = new QLabel(layoutWidget6);
+        cards_visa_number = new QLabel(layoutWidget5);
         cards_visa_number->setObjectName("cards_visa_number");
 
         horizontalLayout_6->addWidget(cards_visa_number);
@@ -1715,12 +1583,12 @@ public:
 
         horizontalLayout_11 = new QHBoxLayout();
         horizontalLayout_11->setObjectName("horizontalLayout_11");
-        cards_visa_validity_label = new QLabel(layoutWidget6);
+        cards_visa_validity_label = new QLabel(layoutWidget5);
         cards_visa_validity_label->setObjectName("cards_visa_validity_label");
 
         horizontalLayout_11->addWidget(cards_visa_validity_label);
 
-        cards_visa_validity = new QLabel(layoutWidget6);
+        cards_visa_validity = new QLabel(layoutWidget5);
         cards_visa_validity->setObjectName("cards_visa_validity");
 
         horizontalLayout_11->addWidget(cards_visa_validity);
@@ -1728,7 +1596,7 @@ public:
 
         cards_available_layout->addLayout(horizontalLayout_11, 1, 0, 1, 1);
 
-        line = new QFrame(layoutWidget6);
+        line = new QFrame(layoutWidget5);
         line->setObjectName("line");
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
@@ -1738,12 +1606,12 @@ public:
         horizontalLayout_9 = new QHBoxLayout();
         horizontalLayout_9->setObjectName("horizontalLayout_9");
         horizontalLayout_9->setSizeConstraint(QLayout::SetDefaultConstraint);
-        cards_american_label = new QLabel(layoutWidget6);
+        cards_american_label = new QLabel(layoutWidget5);
         cards_american_label->setObjectName("cards_american_label");
 
         horizontalLayout_9->addWidget(cards_american_label);
 
-        cards_americal_number = new QLabel(layoutWidget6);
+        cards_americal_number = new QLabel(layoutWidget5);
         cards_americal_number->setObjectName("cards_americal_number");
 
         horizontalLayout_9->addWidget(cards_americal_number);
@@ -1753,12 +1621,12 @@ public:
 
         horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setObjectName("horizontalLayout_10");
-        cards_american_validity_label = new QLabel(layoutWidget6);
+        cards_american_validity_label = new QLabel(layoutWidget5);
         cards_american_validity_label->setObjectName("cards_american_validity_label");
 
         horizontalLayout_10->addWidget(cards_american_validity_label);
 
-        cards_american_validity = new QLabel(layoutWidget6);
+        cards_american_validity = new QLabel(layoutWidget5);
         cards_american_validity->setObjectName("cards_american_validity");
 
         horizontalLayout_10->addWidget(cards_american_validity);
@@ -1766,7 +1634,7 @@ public:
 
         cards_available_layout->addLayout(horizontalLayout_10, 4, 0, 1, 1);
 
-        line_2 = new QFrame(layoutWidget6);
+        line_2 = new QFrame(layoutWidget5);
         line_2->setObjectName("line_2");
         line_2->setFrameShape(QFrame::HLine);
         line_2->setFrameShadow(QFrame::Sunken);
@@ -1776,12 +1644,12 @@ public:
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setObjectName("horizontalLayout_8");
         horizontalLayout_8->setSizeConstraint(QLayout::SetMinimumSize);
-        cards_credit_label = new QLabel(layoutWidget6);
+        cards_credit_label = new QLabel(layoutWidget5);
         cards_credit_label->setObjectName("cards_credit_label");
 
         horizontalLayout_8->addWidget(cards_credit_label);
 
-        cards_credit_number = new QLabel(layoutWidget6);
+        cards_credit_number = new QLabel(layoutWidget5);
         cards_credit_number->setObjectName("cards_credit_number");
 
         horizontalLayout_8->addWidget(cards_credit_number);
@@ -1792,12 +1660,12 @@ public:
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName("horizontalLayout_7");
         horizontalLayout_7->setSizeConstraint(QLayout::SetMinimumSize);
-        cards_credit_validity_label = new QLabel(layoutWidget6);
+        cards_credit_validity_label = new QLabel(layoutWidget5);
         cards_credit_validity_label->setObjectName("cards_credit_validity_label");
 
         horizontalLayout_7->addWidget(cards_credit_validity_label);
 
-        cards_credit_validity = new QLabel(layoutWidget6);
+        cards_credit_validity = new QLabel(layoutWidget5);
         cards_credit_validity->setObjectName("cards_credit_validity");
 
         horizontalLayout_7->addWidget(cards_credit_validity);
@@ -1808,21 +1676,21 @@ public:
         cards_credit_box = new QGroupBox(cards_page_box);
         cards_credit_box->setObjectName("cards_credit_box");
         cards_credit_box->setGeometry(QRect(10, 260, 341, 161));
-        layoutWidget7 = new QWidget(cards_credit_box);
-        layoutWidget7->setObjectName("layoutWidget7");
-        layoutWidget7->setGeometry(QRect(10, 30, 321, 111));
-        cards_credit_layout = new QGridLayout(layoutWidget7);
+        layoutWidget6 = new QWidget(cards_credit_box);
+        layoutWidget6->setObjectName("layoutWidget6");
+        layoutWidget6->setGeometry(QRect(10, 30, 321, 111));
+        cards_credit_layout = new QGridLayout(layoutWidget6);
         cards_credit_layout->setObjectName("cards_credit_layout");
         cards_credit_layout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_14 = new QHBoxLayout();
         horizontalLayout_14->setObjectName("horizontalLayout_14");
         horizontalLayout_14->setSizeConstraint(QLayout::SetDefaultConstraint);
-        cards_american_bill_label = new QLabel(layoutWidget7);
+        cards_american_bill_label = new QLabel(layoutWidget6);
         cards_american_bill_label->setObjectName("cards_american_bill_label");
 
         horizontalLayout_14->addWidget(cards_american_bill_label);
 
-        cards_american_bill_number = new QLabel(layoutWidget7);
+        cards_american_bill_number = new QLabel(layoutWidget6);
         cards_american_bill_number->setObjectName("cards_american_bill_number");
 
         horizontalLayout_14->addWidget(cards_american_bill_number);
@@ -1832,12 +1700,12 @@ public:
 
         horizontalLayout_15 = new QHBoxLayout();
         horizontalLayout_15->setObjectName("horizontalLayout_15");
-        cards_american_bill_validity_label = new QLabel(layoutWidget7);
+        cards_american_bill_validity_label = new QLabel(layoutWidget6);
         cards_american_bill_validity_label->setObjectName("cards_american_bill_validity_label");
 
         horizontalLayout_15->addWidget(cards_american_bill_validity_label);
 
-        cards_american_bill_validity = new QLabel(layoutWidget7);
+        cards_american_bill_validity = new QLabel(layoutWidget6);
         cards_american_bill_validity->setObjectName("cards_american_bill_validity");
 
         horizontalLayout_15->addWidget(cards_american_bill_validity);
@@ -1847,12 +1715,12 @@ public:
 
         horizontalLayout_18 = new QHBoxLayout();
         horizontalLayout_18->setObjectName("horizontalLayout_18");
-        cards_american_due_bill_label = new QLabel(layoutWidget7);
+        cards_american_due_bill_label = new QLabel(layoutWidget6);
         cards_american_due_bill_label->setObjectName("cards_american_due_bill_label");
 
         horizontalLayout_18->addWidget(cards_american_due_bill_label);
 
-        cards_american_due_bill = new QLabel(layoutWidget7);
+        cards_american_due_bill = new QLabel(layoutWidget6);
         cards_american_due_bill->setObjectName("cards_american_due_bill");
         cards_american_due_bill->setStyleSheet(QString::fromUtf8("color: rgb(237, 51, 59);"));
 
@@ -1861,14 +1729,14 @@ public:
 
         cards_credit_layout->addLayout(horizontalLayout_18, 2, 0, 1, 1);
 
-        line_4 = new QFrame(layoutWidget7);
+        line_4 = new QFrame(layoutWidget6);
         line_4->setObjectName("line_4");
         line_4->setFrameShape(QFrame::HLine);
         line_4->setFrameShadow(QFrame::Sunken);
 
         cards_credit_layout->addWidget(line_4, 3, 0, 1, 1);
 
-        cards_american_bill_pay_now_button = new QPushButton(layoutWidget7);
+        cards_american_bill_pay_now_button = new QPushButton(layoutWidget6);
         cards_american_bill_pay_now_button->setObjectName("cards_american_bill_pay_now_button");
         cards_american_bill_pay_now_button->setStyleSheet(QString::fromUtf8("color: rgb(38, 162, 105);"));
 
@@ -2078,33 +1946,46 @@ public:
         ft_from_box = new QGroupBox(ft_box);
         ft_from_box->setObjectName("ft_from_box");
         ft_from_box->setGeometry(QRect(20, 30, 331, 181));
-        layoutWidget8 = new QWidget(ft_from_box);
-        layoutWidget8->setObjectName("layoutWidget8");
-        layoutWidget8->setGeometry(QRect(20, 30, 291, 143));
-        ft_from_layout = new QFormLayout(layoutWidget8);
-        ft_from_layout->setObjectName("ft_from_layout");
-        ft_from_layout->setVerticalSpacing(19);
-        ft_from_layout->setContentsMargins(0, 0, 0, 0);
-        ft_from_account_type = new QComboBox(layoutWidget8);
-        ft_from_account_type->addItem(QString());
-        ft_from_account_type->setObjectName("ft_from_account_type");
+        layoutWidget7 = new QWidget(ft_from_box);
+        layoutWidget7->setObjectName("layoutWidget7");
+        layoutWidget7->setGeometry(QRect(11, 31, 311, 141));
+        gridLayout_29 = new QGridLayout(layoutWidget7);
+        gridLayout_29->setObjectName("gridLayout_29");
+        gridLayout_29->setContentsMargins(0, 0, 0, 0);
+        ft_from_account_no_label = new QLabel(layoutWidget7);
+        ft_from_account_no_label->setObjectName("ft_from_account_no_label");
 
-        ft_from_layout->setWidget(0, QFormLayout::SpanningRole, ft_from_account_type);
+        gridLayout_29->addWidget(ft_from_account_no_label, 0, 0, 1, 1);
 
-        ft_from_balance = new QLabel(layoutWidget8);
+        ft_from_account_no = new QLabel(layoutWidget7);
+        ft_from_account_no->setObjectName("ft_from_account_no");
+
+        gridLayout_29->addWidget(ft_from_account_no, 0, 1, 1, 1);
+
+        ft_from_balance = new QLabel(layoutWidget7);
         ft_from_balance->setObjectName("ft_from_balance");
 
-        ft_from_layout->setWidget(1, QFormLayout::SpanningRole, ft_from_balance);
+        gridLayout_29->addWidget(ft_from_balance, 1, 0, 1, 1);
 
-        ft_from_currency = new QLabel(layoutWidget8);
+        ft_from_currency = new QLabel(layoutWidget7);
         ft_from_currency->setObjectName("ft_from_currency");
 
-        ft_from_layout->setWidget(2, QFormLayout::SpanningRole, ft_from_currency);
+        gridLayout_29->addWidget(ft_from_currency, 2, 0, 1, 1);
 
-        ft_from_transfer_amount = new QLineEdit(layoutWidget8);
+        ft_from_currency_2 = new QLabel(layoutWidget7);
+        ft_from_currency_2->setObjectName("ft_from_currency_2");
+
+        gridLayout_29->addWidget(ft_from_currency_2, 2, 1, 1, 1);
+
+        ft_from_transfer_amount = new QLineEdit(layoutWidget7);
         ft_from_transfer_amount->setObjectName("ft_from_transfer_amount");
 
-        ft_from_layout->setWidget(3, QFormLayout::SpanningRole, ft_from_transfer_amount);
+        gridLayout_29->addWidget(ft_from_transfer_amount, 3, 0, 1, 2);
+
+        ft_from_available_balance = new QLabel(layoutWidget7);
+        ft_from_available_balance->setObjectName("ft_from_available_balance");
+
+        gridLayout_29->addWidget(ft_from_available_balance, 1, 1, 1, 1);
 
         ft_to_box = new QGroupBox(ft_box);
         ft_to_box->setObjectName("ft_to_box");
@@ -2112,48 +1993,53 @@ public:
         ft_to_notice_label = new QLabel(ft_to_box);
         ft_to_notice_label->setObjectName("ft_to_notice_label");
         ft_to_notice_label->setGeometry(QRect(10, 30, 371, 20));
-        layoutWidget9 = new QWidget(ft_to_box);
-        layoutWidget9->setObjectName("layoutWidget9");
-        layoutWidget9->setGeometry(QRect(20, 60, 351, 201));
-        ft_to_layout = new QFormLayout(layoutWidget9);
+        layoutWidget8 = new QWidget(ft_to_box);
+        layoutWidget8->setObjectName("layoutWidget8");
+        layoutWidget8->setGeometry(QRect(20, 60, 351, 201));
+        ft_to_layout = new QFormLayout(layoutWidget8);
         ft_to_layout->setObjectName("ft_to_layout");
         ft_to_layout->setVerticalSpacing(10);
         ft_to_layout->setContentsMargins(0, 0, 0, 0);
-        ft_to_select_beneficiary = new QComboBox(layoutWidget9);
+        ft_to_select_beneficiary = new QComboBox(layoutWidget8);
         ft_to_select_beneficiary->addItem(QString());
         ft_to_select_beneficiary->setObjectName("ft_to_select_beneficiary");
 
         ft_to_layout->setWidget(0, QFormLayout::SpanningRole, ft_to_select_beneficiary);
 
-        ft_to_account = new QLineEdit(layoutWidget9);
+        ft_to_account = new QLineEdit(layoutWidget8);
         ft_to_account->setObjectName("ft_to_account");
 
         ft_to_layout->setWidget(1, QFormLayout::SpanningRole, ft_to_account);
 
-        ft_to_ac_holder = new QLineEdit(layoutWidget9);
+        ft_to_ac_holder = new QLineEdit(layoutWidget8);
         ft_to_ac_holder->setObjectName("ft_to_ac_holder");
 
         ft_to_layout->setWidget(2, QFormLayout::SpanningRole, ft_to_ac_holder);
 
-        ft_to_currency = new QLineEdit(layoutWidget9);
-        ft_to_currency->setObjectName("ft_to_currency");
-
-        ft_to_layout->setWidget(3, QFormLayout::SpanningRole, ft_to_currency);
-
-        ft_to_narration = new QLineEdit(layoutWidget9);
+        ft_to_narration = new QLineEdit(layoutWidget8);
         ft_to_narration->setObjectName("ft_to_narration");
 
         ft_to_layout->setWidget(4, QFormLayout::SpanningRole, ft_to_narration);
 
-        ft_to_pay_now_button = new QRadioButton(layoutWidget9);
+        ft_to_pay_now_button = new QRadioButton(layoutWidget8);
         ft_to_pay_now_button->setObjectName("ft_to_pay_now_button");
 
         ft_to_layout->setWidget(5, QFormLayout::LabelRole, ft_to_pay_now_button);
 
-        ft_to_schedule_button = new QRadioButton(layoutWidget9);
+        ft_to_schedule_button = new QRadioButton(layoutWidget8);
         ft_to_schedule_button->setObjectName("ft_to_schedule_button");
 
         ft_to_layout->setWidget(5, QFormLayout::FieldRole, ft_to_schedule_button);
+
+        ft_to_currency_label = new QLabel(layoutWidget8);
+        ft_to_currency_label->setObjectName("ft_to_currency_label");
+
+        ft_to_layout->setWidget(3, QFormLayout::LabelRole, ft_to_currency_label);
+
+        ft_to_currency = new QLabel(layoutWidget8);
+        ft_to_currency->setObjectName("ft_to_currency");
+
+        ft_to_layout->setWidget(3, QFormLayout::FieldRole, ft_to_currency);
 
         ft_send_button = new QPushButton(ft_box);
         ft_send_button->setObjectName("ft_send_button");
@@ -2294,10 +2180,10 @@ public:
         profile_box = new QGroupBox(profile_page);
         profile_box->setObjectName("profile_box");
         profile_box->setGeometry(QRect(180, 180, 391, 341));
-        layoutWidget10 = new QWidget(profile_box);
-        layoutWidget10->setObjectName("layoutWidget10");
-        layoutWidget10->setGeometry(QRect(20, 21, 351, 304));
-        profile_box_layout = new QFormLayout(layoutWidget10);
+        layoutWidget9 = new QWidget(profile_box);
+        layoutWidget9->setObjectName("layoutWidget9");
+        layoutWidget9->setGeometry(QRect(20, 21, 351, 304));
+        profile_box_layout = new QFormLayout(layoutWidget9);
         profile_box_layout->setObjectName("profile_box_layout");
         profile_box_layout->setVerticalSpacing(36);
         profile_box_layout->setContentsMargins(0, 0, 0, 0);
@@ -2305,12 +2191,12 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
-        profile_full_name_label = new QLabel(layoutWidget10);
+        profile_full_name_label = new QLabel(layoutWidget9);
         profile_full_name_label->setObjectName("profile_full_name_label");
 
         gridLayout->addWidget(profile_full_name_label, 0, 0, 1, 1);
 
-        profile_full_name = new QLabel(layoutWidget10);
+        profile_full_name = new QLabel(layoutWidget9);
         profile_full_name->setObjectName("profile_full_name");
 
         gridLayout->addWidget(profile_full_name, 0, 1, 1, 1);
@@ -2322,12 +2208,12 @@ public:
         gridLayout_2->setSpacing(6);
         gridLayout_2->setObjectName("gridLayout_2");
         gridLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
-        profile_user_name_label = new QLabel(layoutWidget10);
+        profile_user_name_label = new QLabel(layoutWidget9);
         profile_user_name_label->setObjectName("profile_user_name_label");
 
         gridLayout_2->addWidget(profile_user_name_label, 0, 0, 1, 1);
 
-        profile_user_name = new QLabel(layoutWidget10);
+        profile_user_name = new QLabel(layoutWidget9);
         profile_user_name->setObjectName("profile_user_name");
 
         gridLayout_2->addWidget(profile_user_name, 0, 1, 1, 1);
@@ -2339,12 +2225,12 @@ public:
         gridLayout_3->setSpacing(6);
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout_3->setSizeConstraint(QLayout::SetDefaultConstraint);
-        profile_email_label = new QLabel(layoutWidget10);
+        profile_email_label = new QLabel(layoutWidget9);
         profile_email_label->setObjectName("profile_email_label");
 
         gridLayout_3->addWidget(profile_email_label, 0, 0, 1, 1);
 
-        profile_email = new QLabel(layoutWidget10);
+        profile_email = new QLabel(layoutWidget9);
         profile_email->setObjectName("profile_email");
 
         gridLayout_3->addWidget(profile_email, 0, 1, 1, 1);
@@ -2356,12 +2242,12 @@ public:
         gridLayout_4->setSpacing(6);
         gridLayout_4->setObjectName("gridLayout_4");
         gridLayout_4->setSizeConstraint(QLayout::SetDefaultConstraint);
-        profile_phone_label = new QLabel(layoutWidget10);
+        profile_phone_label = new QLabel(layoutWidget9);
         profile_phone_label->setObjectName("profile_phone_label");
 
         gridLayout_4->addWidget(profile_phone_label, 0, 0, 1, 1);
 
-        profile_phone = new QLabel(layoutWidget10);
+        profile_phone = new QLabel(layoutWidget9);
         profile_phone->setObjectName("profile_phone");
 
         gridLayout_4->addWidget(profile_phone, 0, 1, 1, 1);
@@ -2373,12 +2259,12 @@ public:
         gridLayout_5->setSpacing(6);
         gridLayout_5->setObjectName("gridLayout_5");
         gridLayout_5->setSizeConstraint(QLayout::SetDefaultConstraint);
-        profile_date_label = new QLabel(layoutWidget10);
+        profile_date_label = new QLabel(layoutWidget9);
         profile_date_label->setObjectName("profile_date_label");
 
         gridLayout_5->addWidget(profile_date_label, 0, 0, 1, 1);
 
-        profile_date = new QLabel(layoutWidget10);
+        profile_date = new QLabel(layoutWidget9);
         profile_date->setObjectName("profile_date");
 
         gridLayout_5->addWidget(profile_date, 0, 1, 1, 1);
@@ -2390,24 +2276,27 @@ public:
         horizontalLayout_5->setSpacing(6);
         horizontalLayout_5->setObjectName("horizontalLayout_5");
         horizontalLayout_5->setSizeConstraint(QLayout::SetDefaultConstraint);
-        profile_image_label = new QLabel(layoutWidget10);
+        profile_image_label = new QLabel(layoutWidget9);
         profile_image_label->setObjectName("profile_image_label");
-        sizePolicy2.setHeightForWidth(profile_image_label->sizePolicy().hasHeightForWidth());
-        profile_image_label->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy1(QSizePolicy::Maximum, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(profile_image_label->sizePolicy().hasHeightForWidth());
+        profile_image_label->setSizePolicy(sizePolicy1);
 
         horizontalLayout_5->addWidget(profile_image_label);
 
-        profile_image_button = new QPushButton(layoutWidget10);
+        profile_image_button = new QPushButton(layoutWidget9);
         profile_image_button->setObjectName("profile_image_button");
-        QSizePolicy sizePolicy3(QSizePolicy::Maximum, QSizePolicy::Fixed);
-        sizePolicy3.setHorizontalStretch(0);
-        sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(profile_image_button->sizePolicy().hasHeightForWidth());
-        profile_image_button->setSizePolicy(sizePolicy3);
+        QSizePolicy sizePolicy2(QSizePolicy::Maximum, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(profile_image_button->sizePolicy().hasHeightForWidth());
+        profile_image_button->setSizePolicy(sizePolicy2);
 
         horizontalLayout_5->addWidget(profile_image_button);
 
-        profile_image_notice = new QLabel(layoutWidget10);
+        profile_image_notice = new QLabel(layoutWidget9);
         profile_image_notice->setObjectName("profile_image_notice");
 
         horizontalLayout_5->addWidget(profile_image_notice);
@@ -2577,31 +2466,31 @@ public:
 
         horizontalLayout_46->addWidget(signup_password);
 
-        layoutWidget11 = new QWidget(groupBox);
-        layoutWidget11->setObjectName("layoutWidget11");
-        layoutWidget11->setGeometry(QRect(20, 50, 641, 27));
-        horizontalLayout_40 = new QHBoxLayout(layoutWidget11);
+        layoutWidget10 = new QWidget(groupBox);
+        layoutWidget10->setObjectName("layoutWidget10");
+        layoutWidget10->setGeometry(QRect(20, 50, 641, 27));
+        horizontalLayout_40 = new QHBoxLayout(layoutWidget10);
         horizontalLayout_40->setObjectName("horizontalLayout_40");
         horizontalLayout_40->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(layoutWidget11);
+        label = new QLabel(layoutWidget10);
         label->setObjectName("label");
-        QSizePolicy sizePolicy4(QSizePolicy::Minimum, QSizePolicy::Preferred);
-        sizePolicy4.setHorizontalStretch(0);
-        sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
-        label->setSizePolicy(sizePolicy4);
+        QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Preferred);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy3);
 
         horizontalLayout_40->addWidget(label);
 
-        signup_account_type = new QComboBox(layoutWidget11);
+        signup_account_type = new QComboBox(layoutWidget10);
         signup_account_type->addItem(QString());
         signup_account_type->addItem(QString());
         signup_account_type->setObjectName("signup_account_type");
-        QSizePolicy sizePolicy5(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
-        sizePolicy5.setHorizontalStretch(0);
-        sizePolicy5.setVerticalStretch(0);
-        sizePolicy5.setHeightForWidth(signup_account_type->sizePolicy().hasHeightForWidth());
-        signup_account_type->setSizePolicy(sizePolicy5);
+        QSizePolicy sizePolicy4(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(signup_account_type->sizePolicy().hasHeightForWidth());
+        signup_account_type->setSizePolicy(sizePolicy4);
 
         horizontalLayout_40->addWidget(signup_account_type);
 
@@ -2609,75 +2498,75 @@ public:
 
         horizontalLayout_40->addItem(horizontalSpacer_5);
 
-        label_2 = new QLabel(layoutWidget11);
+        label_2 = new QLabel(layoutWidget10);
         label_2->setObjectName("label_2");
-        sizePolicy4.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
-        label_2->setSizePolicy(sizePolicy4);
+        sizePolicy3.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy3);
 
         horizontalLayout_40->addWidget(label_2);
 
-        signup_branch = new QComboBox(layoutWidget11);
+        signup_branch = new QComboBox(layoutWidget10);
         signup_branch->addItem(QString());
         signup_branch->addItem(QString());
         signup_branch->setObjectName("signup_branch");
-        QSizePolicy sizePolicy6(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
-        sizePolicy6.setHorizontalStretch(0);
-        sizePolicy6.setVerticalStretch(0);
-        sizePolicy6.setHeightForWidth(signup_branch->sizePolicy().hasHeightForWidth());
-        signup_branch->setSizePolicy(sizePolicy6);
+        QSizePolicy sizePolicy5(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
+        sizePolicy5.setHorizontalStretch(0);
+        sizePolicy5.setVerticalStretch(0);
+        sizePolicy5.setHeightForWidth(signup_branch->sizePolicy().hasHeightForWidth());
+        signup_branch->setSizePolicy(sizePolicy5);
 
         horizontalLayout_40->addWidget(signup_branch);
 
-        layoutWidget12 = new QWidget(groupBox);
-        layoutWidget12->setObjectName("layoutWidget12");
-        layoutWidget12->setGeometry(QRect(20, 100, 641, 27));
-        horizontalLayout_41 = new QHBoxLayout(layoutWidget12);
+        layoutWidget11 = new QWidget(groupBox);
+        layoutWidget11->setObjectName("layoutWidget11");
+        layoutWidget11->setGeometry(QRect(20, 100, 641, 27));
+        horizontalLayout_41 = new QHBoxLayout(layoutWidget11);
         horizontalLayout_41->setObjectName("horizontalLayout_41");
         horizontalLayout_41->setContentsMargins(0, 0, 0, 0);
-        label_5 = new QLabel(layoutWidget12);
+        label_5 = new QLabel(layoutWidget11);
         label_5->setObjectName("label_5");
-        sizePolicy4.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
-        label_5->setSizePolicy(sizePolicy4);
+        sizePolicy3.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
+        label_5->setSizePolicy(sizePolicy3);
 
         horizontalLayout_41->addWidget(label_5);
 
-        comboBox_3 = new QComboBox(layoutWidget12);
+        comboBox_3 = new QComboBox(layoutWidget11);
         comboBox_3->addItem(QString());
         comboBox_3->addItem(QString());
         comboBox_3->addItem(QString());
         comboBox_3->setObjectName("comboBox_3");
-        QSizePolicy sizePolicy7(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy7.setHorizontalStretch(0);
-        sizePolicy7.setVerticalStretch(0);
-        sizePolicy7.setHeightForWidth(comboBox_3->sizePolicy().hasHeightForWidth());
-        comboBox_3->setSizePolicy(sizePolicy7);
+        QSizePolicy sizePolicy6(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy6.setHorizontalStretch(0);
+        sizePolicy6.setVerticalStretch(0);
+        sizePolicy6.setHeightForWidth(comboBox_3->sizePolicy().hasHeightForWidth());
+        comboBox_3->setSizePolicy(sizePolicy6);
 
         horizontalLayout_41->addWidget(comboBox_3);
 
-        signup_first_name = new QLineEdit(layoutWidget12);
+        signup_first_name = new QLineEdit(layoutWidget11);
         signup_first_name->setObjectName("signup_first_name");
 
         horizontalLayout_41->addWidget(signup_first_name);
 
-        signup_last_name = new QLineEdit(layoutWidget12);
+        signup_last_name = new QLineEdit(layoutWidget11);
         signup_last_name->setObjectName("signup_last_name");
 
         horizontalLayout_41->addWidget(signup_last_name);
 
-        layoutWidget13 = new QWidget(groupBox);
-        layoutWidget13->setObjectName("layoutWidget13");
-        layoutWidget13->setGeometry(QRect(20, 140, 641, 29));
-        horizontalLayout_44 = new QHBoxLayout(layoutWidget13);
+        layoutWidget12 = new QWidget(groupBox);
+        layoutWidget12->setObjectName("layoutWidget12");
+        layoutWidget12->setGeometry(QRect(20, 140, 641, 29));
+        horizontalLayout_44 = new QHBoxLayout(layoutWidget12);
         horizontalLayout_44->setObjectName("horizontalLayout_44");
         horizontalLayout_44->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_42 = new QHBoxLayout();
         horizontalLayout_42->setObjectName("horizontalLayout_42");
-        label_6 = new QLabel(layoutWidget13);
+        label_6 = new QLabel(layoutWidget12);
         label_6->setObjectName("label_6");
 
         horizontalLayout_42->addWidget(label_6);
 
-        signup_phone = new QLineEdit(layoutWidget13);
+        signup_phone = new QLineEdit(layoutWidget12);
         signup_phone->setObjectName("signup_phone");
 
         horizontalLayout_42->addWidget(signup_phone);
@@ -2687,12 +2576,12 @@ public:
 
         horizontalLayout_43 = new QHBoxLayout();
         horizontalLayout_43->setObjectName("horizontalLayout_43");
-        label_7 = new QLabel(layoutWidget13);
+        label_7 = new QLabel(layoutWidget12);
         label_7->setObjectName("label_7");
 
         horizontalLayout_43->addWidget(label_7);
 
-        signup_email = new QLineEdit(layoutWidget13);
+        signup_email = new QLineEdit(layoutWidget12);
         signup_email->setObjectName("signup_email");
 
         horizontalLayout_43->addWidget(signup_email);
@@ -2700,72 +2589,72 @@ public:
 
         horizontalLayout_44->addLayout(horizontalLayout_43);
 
-        layoutWidget14 = new QWidget(groupBox);
-        layoutWidget14->setObjectName("layoutWidget14");
-        layoutWidget14->setGeometry(QRect(20, 220, 641, 27));
-        horizontalLayout_45 = new QHBoxLayout(layoutWidget14);
+        layoutWidget13 = new QWidget(groupBox);
+        layoutWidget13->setObjectName("layoutWidget13");
+        layoutWidget13->setGeometry(QRect(20, 220, 641, 27));
+        horizontalLayout_45 = new QHBoxLayout(layoutWidget13);
         horizontalLayout_45->setObjectName("horizontalLayout_45");
         horizontalLayout_45->setContentsMargins(0, 0, 0, 0);
-        label_8 = new QLabel(layoutWidget14);
+        label_8 = new QLabel(layoutWidget13);
         label_8->setObjectName("label_8");
 
         horizontalLayout_45->addWidget(label_8);
 
-        signup_address = new QLineEdit(layoutWidget14);
+        signup_address = new QLineEdit(layoutWidget13);
         signup_address->setObjectName("signup_address");
 
         horizontalLayout_45->addWidget(signup_address);
 
-        layoutWidget15 = new QWidget(groupBox);
-        layoutWidget15->setObjectName("layoutWidget15");
-        layoutWidget15->setGeometry(QRect(20, 260, 641, 27));
-        horizontalLayout_47 = new QHBoxLayout(layoutWidget15);
+        layoutWidget14 = new QWidget(groupBox);
+        layoutWidget14->setObjectName("layoutWidget14");
+        layoutWidget14->setGeometry(QRect(20, 260, 641, 27));
+        horizontalLayout_47 = new QHBoxLayout(layoutWidget14);
         horizontalLayout_47->setObjectName("horizontalLayout_47");
         horizontalLayout_47->setContentsMargins(0, 0, 0, 0);
-        label_10 = new QLabel(layoutWidget15);
+        label_10 = new QLabel(layoutWidget14);
         label_10->setObjectName("label_10");
 
         horizontalLayout_47->addWidget(label_10);
 
-        signup_city = new QLineEdit(layoutWidget15);
+        signup_city = new QLineEdit(layoutWidget14);
         signup_city->setObjectName("signup_city");
 
         horizontalLayout_47->addWidget(signup_city);
 
-        label_11 = new QLabel(layoutWidget15);
+        label_11 = new QLabel(layoutWidget14);
         label_11->setObjectName("label_11");
 
         horizontalLayout_47->addWidget(label_11);
 
-        signup_postal_code = new QLineEdit(layoutWidget15);
+        signup_postal_code = new QLineEdit(layoutWidget14);
         signup_postal_code->setObjectName("signup_postal_code");
 
         horizontalLayout_47->addWidget(signup_postal_code);
 
-        label_12 = new QLabel(layoutWidget15);
+        label_12 = new QLabel(layoutWidget14);
         label_12->setObjectName("label_12");
 
         horizontalLayout_47->addWidget(label_12);
 
-        signup_country = new QLineEdit(layoutWidget15);
+        signup_country = new QLineEdit(layoutWidget14);
         signup_country->setObjectName("signup_country");
 
         horizontalLayout_47->addWidget(signup_country);
 
-        layoutWidget16 = new QWidget(groupBox);
-        layoutWidget16->setObjectName("layoutWidget16");
-        layoutWidget16->setGeometry(QRect(20, 300, 641, 27));
-        horizontalLayout_48 = new QHBoxLayout(layoutWidget16);
+        layoutWidget15 = new QWidget(groupBox);
+        layoutWidget15->setObjectName("layoutWidget15");
+        layoutWidget15->setGeometry(QRect(20, 300, 641, 27));
+        horizontalLayout_48 = new QHBoxLayout(layoutWidget15);
         horizontalLayout_48->setObjectName("horizontalLayout_48");
         horizontalLayout_48->setContentsMargins(0, 0, 0, 0);
-        label_13 = new QLabel(layoutWidget16);
+        label_13 = new QLabel(layoutWidget15);
         label_13->setObjectName("label_13");
-        sizePolicy2.setHeightForWidth(label_13->sizePolicy().hasHeightForWidth());
-        label_13->setSizePolicy(sizePolicy2);
+        sizePolicy1.setHeightForWidth(label_13->sizePolicy().hasHeightForWidth());
+        label_13->setSizePolicy(sizePolicy1);
 
         horizontalLayout_48->addWidget(label_13);
 
-        signup_education = new QComboBox(layoutWidget16);
+        signup_education = new QComboBox(layoutWidget15);
         signup_education->addItem(QString());
         signup_education->addItem(QString());
         signup_education->addItem(QString());
@@ -2774,14 +2663,14 @@ public:
 
         horizontalLayout_48->addWidget(signup_education);
 
-        label_14 = new QLabel(layoutWidget16);
+        label_14 = new QLabel(layoutWidget15);
         label_14->setObjectName("label_14");
-        sizePolicy2.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
-        label_14->setSizePolicy(sizePolicy2);
+        sizePolicy1.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
+        label_14->setSizePolicy(sizePolicy1);
 
         horizontalLayout_48->addWidget(label_14);
 
-        signup_identification = new QComboBox(layoutWidget16);
+        signup_identification = new QComboBox(layoutWidget15);
         signup_identification->addItem(QString());
         signup_identification->addItem(QString());
         signup_identification->addItem(QString());
@@ -2856,13 +2745,13 @@ public:
         forget_label->setObjectName("forget_label");
         forget_label->setGeometry(QRect(13, 16, 249, 22));
         forget_label->setFont(font3);
-        layoutWidget17 = new QWidget(forget_container);
-        layoutWidget17->setObjectName("layoutWidget17");
-        layoutWidget17->setGeometry(QRect(10, 50, 351, 261));
-        gridLayout_28 = new QGridLayout(layoutWidget17);
+        layoutWidget16 = new QWidget(forget_container);
+        layoutWidget16->setObjectName("layoutWidget16");
+        layoutWidget16->setGeometry(QRect(10, 50, 351, 261));
+        gridLayout_28 = new QGridLayout(layoutWidget16);
         gridLayout_28->setObjectName("gridLayout_28");
         gridLayout_28->setContentsMargins(0, 0, 0, 0);
-        forget_select_type = new QComboBox(layoutWidget17);
+        forget_select_type = new QComboBox(layoutWidget16);
         forget_select_type->addItem(QString());
         forget_select_type->addItem(QString());
         forget_select_type->addItem(QString());
@@ -2878,22 +2767,22 @@ public:
 
         gridLayout_28->addWidget(forget_select_type, 0, 0, 1, 4);
 
-        forget_mobile_code = new QLabel(layoutWidget17);
+        forget_mobile_code = new QLabel(layoutWidget16);
         forget_mobile_code->setObjectName("forget_mobile_code");
 
         gridLayout_28->addWidget(forget_mobile_code, 2, 0, 1, 1);
 
-        forget_mobile_no_input = new QLineEdit(layoutWidget17);
+        forget_mobile_no_input = new QLineEdit(layoutWidget16);
         forget_mobile_no_input->setObjectName("forget_mobile_no_input");
 
         gridLayout_28->addWidget(forget_mobile_no_input, 2, 1, 1, 3);
 
-        forget_email_input = new QLineEdit(layoutWidget17);
+        forget_email_input = new QLineEdit(layoutWidget16);
         forget_email_input->setObjectName("forget_email_input");
 
         gridLayout_28->addWidget(forget_email_input, 3, 0, 1, 4);
 
-        forget_back_button = new QPushButton(layoutWidget17);
+        forget_back_button = new QPushButton(layoutWidget16);
         forget_back_button->setObjectName("forget_back_button");
         sizePolicy.setHeightForWidth(forget_back_button->sizePolicy().hasHeightForWidth());
         forget_back_button->setSizePolicy(sizePolicy);
@@ -2901,18 +2790,18 @@ public:
 
         gridLayout_28->addWidget(forget_back_button, 4, 0, 1, 2);
 
-        forget_submit_button = new QPushButton(layoutWidget17);
+        forget_submit_button = new QPushButton(layoutWidget16);
         forget_submit_button->setObjectName("forget_submit_button");
-        QSizePolicy sizePolicy8(QSizePolicy::Ignored, QSizePolicy::Fixed);
-        sizePolicy8.setHorizontalStretch(0);
-        sizePolicy8.setVerticalStretch(0);
-        sizePolicy8.setHeightForWidth(forget_submit_button->sizePolicy().hasHeightForWidth());
-        forget_submit_button->setSizePolicy(sizePolicy8);
+        QSizePolicy sizePolicy7(QSizePolicy::Ignored, QSizePolicy::Fixed);
+        sizePolicy7.setHorizontalStretch(0);
+        sizePolicy7.setVerticalStretch(0);
+        sizePolicy7.setHeightForWidth(forget_submit_button->sizePolicy().hasHeightForWidth());
+        forget_submit_button->setSizePolicy(sizePolicy7);
         forget_submit_button->setSizeIncrement(QSize(0, 0));
 
         gridLayout_28->addWidget(forget_submit_button, 4, 2, 1, 2);
 
-        forget_birth_day = new QComboBox(layoutWidget17);
+        forget_birth_day = new QComboBox(layoutWidget16);
         forget_birth_day->addItem(QString());
         forget_birth_day->addItem(QString());
         forget_birth_day->addItem(QString());
@@ -2954,7 +2843,7 @@ public:
 
         gridLayout_28->addWidget(forget_birth_day, 1, 3, 1, 1);
 
-        forget_birth_month = new QComboBox(layoutWidget17);
+        forget_birth_month = new QComboBox(layoutWidget16);
         forget_birth_month->addItem(QString());
         forget_birth_month->addItem(QString());
         forget_birth_month->addItem(QString());
@@ -2977,7 +2866,7 @@ public:
 
         gridLayout_28->addWidget(forget_birth_month, 1, 2, 1, 1);
 
-        forget_birth_year = new QComboBox(layoutWidget17);
+        forget_birth_year = new QComboBox(layoutWidget16);
         forget_birth_year->addItem(QString());
         forget_birth_year->addItem(QString());
         forget_birth_year->addItem(QString());
@@ -3052,7 +2941,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(9);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -3089,7 +2978,7 @@ public:
         home_available_balance->setText(QCoreApplication::translate("MainWindow", "1,00,000.00", nullptr));
         home_currency_label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ed333b;\">BDT</span></p></body></html>", nullptr));
         home_savings->setText(QCoreApplication::translate("MainWindow", "140000000000000000", nullptr));
-        home_ledeger->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>1,00,000.00</p></body></html>", nullptr));
+        home_ledger->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>1,00,000.00</p></body></html>", nullptr));
         home_ledger_balance->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#5e5c64;\">LEDGER BALANCE</span></p></body></html>", nullptr));
         home_currency_label_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ed333b;\">BDT</span></p></body></html>", nullptr));
         home_mini_statement_label->setText(QCoreApplication::translate("MainWindow", "MINI STATEMENT", nullptr));
@@ -3106,49 +2995,6 @@ public:
         login_support_logo_3->setText(QString());
         label_36->setText(QCoreApplication::translate("MainWindow", "12345", nullptr));
         groupBox_8->setTitle(QCoreApplication::translate("MainWindow", "Activity Log", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
-        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QCoreApplication::translate("MainWindow", "Status", nullptr));
-        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QCoreApplication::translate("MainWindow", "Date", nullptr));
-        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QCoreApplication::translate("MainWindow", "Amount", nullptr));
-        QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QCoreApplication::translate("MainWindow", "Time", nullptr));
-        QTableWidgetItem *___qtablewidgetitem4 = tableWidget->verticalHeaderItem(0);
-        ___qtablewidgetitem4->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
-        QTableWidgetItem *___qtablewidgetitem5 = tableWidget->verticalHeaderItem(1);
-        ___qtablewidgetitem5->setText(QCoreApplication::translate("MainWindow", "2", nullptr));
-        QTableWidgetItem *___qtablewidgetitem6 = tableWidget->verticalHeaderItem(2);
-        ___qtablewidgetitem6->setText(QCoreApplication::translate("MainWindow", "3", nullptr));
-        QTableWidgetItem *___qtablewidgetitem7 = tableWidget->verticalHeaderItem(3);
-        ___qtablewidgetitem7->setText(QCoreApplication::translate("MainWindow", "4", nullptr));
-
-        const bool __sortingEnabled = tableWidget->isSortingEnabled();
-        tableWidget->setSortingEnabled(false);
-        QTableWidgetItem *___qtablewidgetitem8 = tableWidget->item(0, 0);
-        ___qtablewidgetitem8->setText(QCoreApplication::translate("MainWindow", "DR", nullptr));
-        QTableWidgetItem *___qtablewidgetitem9 = tableWidget->item(0, 1);
-        ___qtablewidgetitem9->setText(QCoreApplication::translate("MainWindow", "24/04/2023", nullptr));
-        QTableWidgetItem *___qtablewidgetitem10 = tableWidget->item(0, 2);
-        ___qtablewidgetitem10->setText(QCoreApplication::translate("MainWindow", "1000.00", nullptr));
-        QTableWidgetItem *___qtablewidgetitem11 = tableWidget->item(0, 3);
-        ___qtablewidgetitem11->setText(QCoreApplication::translate("MainWindow", "12:10pm", nullptr));
-        tableWidget->setSortingEnabled(__sortingEnabled);
-
-        comboBox_15->setItemText(0, QCoreApplication::translate("MainWindow", "All", nullptr));
-        comboBox_15->setItemText(1, QCoreApplication::translate("MainWindow", "Account Statement", nullptr));
-
-        label_25->setText(QCoreApplication::translate("MainWindow", "Activity Type:", nullptr));
-        comboBox_14->setItemText(0, QCoreApplication::translate("MainWindow", "All", nullptr));
-        comboBox_14->setItemText(1, QCoreApplication::translate("MainWindow", "Success", nullptr));
-        comboBox_14->setItemText(2, QCoreApplication::translate("MainWindow", "Failed", nullptr));
-
-        label_24->setText(QCoreApplication::translate("MainWindow", "Status Type: ", nullptr));
-        label_26->setText(QCoreApplication::translate("MainWindow", "From Date:", nullptr));
-        lineEdit_18->setPlaceholderText(QCoreApplication::translate("MainWindow", "dd/mm/yyyy", nullptr));
-        lineEdit_19->setPlaceholderText(QCoreApplication::translate("MainWindow", "dd/mm/yyyy", nullptr));
-        label_27->setText(QCoreApplication::translate("MainWindow", "To Date:", nullptr));
         login_bank_logo_7->setText(QString());
         login_address_label1_7->setText(QCoreApplication::translate("MainWindow", "Plot - CWS- (A)-1, Road No - 34 ", nullptr));
         login_address_label2_7->setText(QCoreApplication::translate("MainWindow", "Gulshan Avenue, Dhaka 1212", nullptr));
@@ -3321,21 +3167,24 @@ public:
         home_statement_button_2->setText(QCoreApplication::translate("MainWindow", "Within FT", nullptr));
         ft_box->setTitle(QCoreApplication::translate("MainWindow", "Fund Transfer within", nullptr));
         ft_from_box->setTitle(QCoreApplication::translate("MainWindow", "From", nullptr));
-        ft_from_account_type->setItemText(0, QCoreApplication::translate("MainWindow", "-Select Account", nullptr));
-
+        ft_from_account_no_label->setText(QCoreApplication::translate("MainWindow", "Account No.", nullptr));
+        ft_from_account_no->setText(QCoreApplication::translate("MainWindow", "12345678910111213", nullptr));
         ft_from_balance->setText(QCoreApplication::translate("MainWindow", "available balance", nullptr));
         ft_from_currency->setText(QCoreApplication::translate("MainWindow", "Currency", nullptr));
+        ft_from_currency_2->setText(QCoreApplication::translate("MainWindow", "BDT", nullptr));
         ft_from_transfer_amount->setPlaceholderText(QCoreApplication::translate("MainWindow", "Tranfer Amount", nullptr));
+        ft_from_available_balance->setText(QCoreApplication::translate("MainWindow", "0000000", nullptr));
         ft_to_box->setTitle(QCoreApplication::translate("MainWindow", "To", nullptr));
         ft_to_notice_label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ed333b;\">*You can complete the ft without adding beneficiary.</span></p></body></html>", nullptr));
         ft_to_select_beneficiary->setItemText(0, QCoreApplication::translate("MainWindow", "-Select Beneficiary-", nullptr));
 
         ft_to_account->setPlaceholderText(QCoreApplication::translate("MainWindow", "To Account", nullptr));
         ft_to_ac_holder->setPlaceholderText(QCoreApplication::translate("MainWindow", "Acount Holder", nullptr));
-        ft_to_currency->setPlaceholderText(QCoreApplication::translate("MainWindow", "Currency", nullptr));
         ft_to_narration->setPlaceholderText(QCoreApplication::translate("MainWindow", "Narrations", nullptr));
         ft_to_pay_now_button->setText(QCoreApplication::translate("MainWindow", "Pay Now", nullptr));
         ft_to_schedule_button->setText(QCoreApplication::translate("MainWindow", "Schedule", nullptr));
+        ft_to_currency_label->setText(QCoreApplication::translate("MainWindow", "Currency : ", nullptr));
+        ft_to_currency->setText(QCoreApplication::translate("MainWindow", "BDT", nullptr));
         ft_send_button->setText(QCoreApplication::translate("MainWindow", "Send", nullptr));
         login_bank_logo_5->setText(QString());
         login_address_label1_5->setText(QCoreApplication::translate("MainWindow", "Plot - CWS- (A)-1, Road No - 34 ", nullptr));
